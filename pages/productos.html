@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SilVegan - Nuestras viandas">
+  <meta name="keywords"
+    content="silvegan viandas, silvegan productos, silvegan precios, silvegan comidas, silvegan hamburguesas, silvegan ensalada, silvegan wok, silvegan guiso, silvegan sanguche, silvegan postres, silvegan milanesas, silvegan unidades">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Inter:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+  <link rel="icon" href="logo.ico">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>SilVegan - Productos</title>
+</head>
+
+<body>
+  <nav class="nav row-md-12 row-sm-6">
+    <ul>
+      <li class="logo"><img src="../img/logo.ico" class="logo" /></li>
+      <li class="boton"><a href="../index.html">Home</a></li>
+      <li class="boton"><a href="productos.html">Productos</a>
+        <ul>
+          <li><a href="productos.html#viandas">Viandas</a></li>
+          <li><a href="productos.html#hamburguesas">Hamburguesas</a></li>
+          <li><a href="productos.html#snacks">Snacks</a></li>
+          <li><a href="productos.html#platosdulces">Postres</a></li>
+        </ul>
+      </li>
+      <li class="boton"><a href="sobremi.html">Sobre mí</a></li>
+      <li class="boton"><a href="contacto.html">Contacto</a></li>
+      <li class="boton"><a href="opiniones.html">Opiniones</a></li>
+    </ul>
+  </nav>
+  <section class="section">
+    <h2 class="wow animate__animated animate__fadeInUp" id="tituloproductos">Listado de productos</h2>
+
+    <h3 id="viandas" class="wow animate__animated animate__fadeInUp">Algunos de nuestros platos
+    </h3>
+    <div id="carousel" class="carousel market wow animate__animated animate__fadeInUp" data-ride="carousel" data-interval="false"> 
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/currygarbanzos.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Curry de garbanzos</h5>
+              <p class="card-text">Arroz con garbanzos y zanahoria condimentado con curry. Con caldo. Por vianda: $250
+              </p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/rollsdeespinaca.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rolls de espinaca</h5>
+              <p class="card-text">Hecho de espinaza y leche de coco. Vegano. Por unidad: $60</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/wokdeverduras.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wok de verduras</h5>
+              <p class="card-text">Salteado con brócolis, fideos, morrones de 3 colores, zanahoria y condimentado con
+                pimienta y salsa de soja. Vegano. Por vianda: $200</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/sangucheguacamole.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sandwich de guacamole</h5>
+              <p class="card-text">Sandwich con pan integral relleno de guacamole, lechuga y brotes de soja. Vegano y
+                sin
+                TACC. Por unidad: $250</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/pasteldezapallo.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Pastel de zapallo</h5>
+              <p class="card-text">Torre hecha con espinaca y leche rellena de zapallo y zanahoria. Vegetariano. Por
+                porción: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/milanesa4.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Milanesas de soja con caprese</h5>
+              <p class="card-text">Vegano. por unidad: $80</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/albondigadeseitan.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Albóndigas de seitán</h5>
+              <p class="card-text">Albóndigas hechas con seitán al filetto. Vegano. Por vianda: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/calabazarellena.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Calabaza rellena</h5>
+              <p class="card-text">Calabaza rellena de pepinos, zanahoria, arroz y salsa de tomate. Por unidad: $300
+              </p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/empanadassemola.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Empandas de sémola</h5>
+              <p class="card-text">Vegano y sin TACC. Por unidad: $80</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/ensaladafalafel.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ensalada de falafel</h5>
+              <p class="card-text">Ensalada con croquetas de falafel, lechuga, pepinos, bocaditos de calabaza y queso
+                de
+                leche de coco. Vegano. Por vianda: $200</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/patitasdeespinaca.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Patitas de espinaca</h5>
+              <p class="card-text">Bastoncitos de espinaca y queso cremoso. Por vianda (10 u): $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/revueltosoja.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Revuelto de soja</h5>
+              <p class="card-text">Ensalada de brotes de soja con lentejones, tomate y zanahoria. Por vianda: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/tacosdechamipgnones.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tacos de champignones</h5>
+              <p class="card-text">Tacos hechos de pan integral relleno de champignones y seitán. Vegano y Sin TACC.
+                Por
+                unidad: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/tacosdepalta.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tacos de palta</h5>
+              <p class="card-text">Tacos hechos de pan integral relleno de palta y zahanorias horneadas. Vegano y Sin
+                TACC.
+                Por unidad: $100</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/salteadodetrigo.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Salteado de trigo</h5>
+              <p class="card-text">Brotes de trigo con champignones y chauchas. Vegano. Por vianda: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/medallonesberenjenas.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones de berenjenas</h5>
+              <p class="card-text">Rodajas de berenjenas horneadas. Por vianda: $100</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/guisoverduras.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Guiso de verduras</h5>
+              <p class="card-text">Guiso de pepinillos, zanahoria, seitán, zapallo, papa, morrones y lentejas. Por
+                vianda:
+                $200</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/ensaladaquinoa.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ensalada de quinoa</h5>
+              <p class="card-text">Revuelto de quinoa con palta, morrones, choclo y cebolla colorada. Por vianda: $150
+              </p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="5" y1="12" x2="9" y2="16" />
+            <line x1="5" y1="12" x2="9" y2="8" />
+          </svg></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" data-slide="next">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="15" y1="16" x2="19" y2="12" />
+            <line x1="15" y1="8" x2="19" y2="12" />
+          </svg></span>
+      </a>
+
+    </div>
+
+    <h3 class="wow animate__animated animate__fadeInUp" id="hamburguesas">Hamburguesas</h3>
+
+    <div id="carousel2" class="carousel market wow animate__animated animate__fadeInUp" data-ride="carousel" data-interval="false">
+      <div class="deslizable carousel-inner">
+        <div class="carousel-item active">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa1.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Veggieland Calabaza</h5>
+              <p class="card-text">Medallones de calabaza a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa2.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Veggieland Quinoa</h5>
+              <p class="card-text">Medallones de quinoa a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa3.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Veggieland Espinaca</h5>
+              <p class="card-text">Medallones de espinaca a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa4.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Veggieland Multicereales</h5>
+              <p class="card-text">Medallones de cereales y semillas a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa5.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Veggieland Brócoli</h5>
+              <p class="card-text">Medallones de brócoli y semillas a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/hamburguesa6.jpg" alt=" Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Medallones Santa Burguesa Aduki y Provenzal</h5>
+              <p class="card-text">Medallones de semillas y condimento a base de soja. Vegano y sin Colesterol.
+                Paquete x 4: $365</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carousel2" data-slide="prev">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="5" y1="12" x2="9" y2="16" />
+            <line x1="5" y1="12" x2="9" y2="8" />
+          </svg></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel2" data-slide="next">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="15" y1="16" x2="19" y2="12" />
+            <line x1="15" y1="8" x2="19" y2="12" />
+          </svg></span>
+      </a>
+    </div>
+
+    <h3 class="wow animate__animated animate__fadeInUp" id="snacks">Snacks</h3>
+
+<div id="carousel3" class="carousel market wow animate__animated animate__fadeInUp" data-ride="carousel" data-interval="false">
+  <div class="deslizable carousel-inner">
+    <div class="carousel-item active">
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack1.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Rolls Natural Pop Lentejas</h5>
+          <p class="card-text">Galletitas de lentejas y arroz integral. Vegano.
+            Paquete 35: $150</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack2.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+          <h5 class="card-title">Snacks de Quinoa Natural Trail</h5>
+          <p class="card-text">Quinoa crocante. Vegano.
+            Paquete 150 g: $200</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack3.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+          <h5 class="card-title">Chips de arroz Natural Pop sabor Queso</h5>
+          <p class="card-text">Chips crocantes sabor queso. Vegano.
+            Paquete 60 g: $150</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack4.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+          <h5 class="card-title">Talitas de arroz Cerealsol sabor pizza</h5>
+          <p class="card-text">Snacks sabor pizza. Vegano y sin TACC.
+            Paquete 50 g: $175</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack5.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+          <h5 class="card-title">Chips de arroz Natural Pop sabor Sal Marina y Oliva</h5>
+          <p class="card-text">Chips crocantes sabor Sal marina. Vegano.
+            Paquete 60 g: $150</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+      <div class="card bloque">
+        <div class="bloqueFoto"><img class="card-img-top" src="../img/snack6.png" alt="Card image cap"></div>
+        <div class="card-body">
+          <h5 class="card-title">Chips de arroz Natural Pop sabor Crema y Cebolla</h5>
+          <p class="card-text">Chips crocantes sabor Cebolla. Vegano.
+            Paquete 60 g: $150</p>
+          <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+              data-target="#myModal">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carousel3" data-slide="prev">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
+        width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="5" y1="12" x2="19" y2="12" />
+        <line x1="5" y1="12" x2="9" y2="16" />
+        <line x1="5" y1="12" x2="9" y2="8" />
+      </svg></span>
+  </a>
+  <a class="carousel-control-next" href="#carousel3" data-slide="next">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
+        width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="5" y1="12" x2="19" y2="12" />
+        <line x1="15" y1="16" x2="19" y2="12" />
+        <line x1="15" y1="8" x2="19" y2="12" />
+      </svg></span>
+  </a>
+</div>
+
+    <h3 class="wow animate__animated animate__fadeInUp" id="platosdulces">Cosas dulces</h3>
+
+    <div id="carousel4" class="carousel market wow animate__animated animate__fadeInUp" data-ride="carousel" data-interval="false">
+      <div class="deslizable carousel-inner">
+        <div class="carousel-item active">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/budinzanahoria.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Budín de zanahoria</h5>
+              <p class="card-text">Budín de zanahoria cubierto de crema de leche de coco y nueces. Vegano y sin TACC.
+                Por
+                unidad: $300</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/cheescake.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Cheescake</h5>
+              <p class="card-text">Cheescake con mousse, café, frutillas y moras. Vegetariano. Por unidad: $350</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/helados.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Helados de agua</h5>
+              <p class="card-text">Helados en paleta hechos con leche de coco con frutas a elección. Por unidad: $100
+              </p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/tortakiwi.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Torta de kiwi</h5>
+              <p class="card-text">Torta de kiwi, frutilla y banana con crema de leche de coco. Vegano. Por unidad:
+                $400</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/brownies.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Brownies</h5>
+              <p class="card-text">Brownies de chocolate con diferentes colores cubiertos de granas. Vegetariano. Por
+                unidad: $50</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+          <div class="card bloque">
+            <div class="bloqueFoto"><img class="card-img-top" src="../img/Envasado2.jpg" alt="Card image cap"></div>
+            <div class="card-body">
+              <h5 class="card-title">Mermelada de frutos rojos</h5>
+              <p class="card-text">Mermelada casera envasada al vacío. Por unidad: $150</p>
+              <div class="comprarProd"><input value="Comprar" class="boton" type="submit" data-toggle="modal"
+                  data-target="#myModal">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carousel4" data-slide="prev">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="5" y1="12" x2="9" y2="16" />
+            <line x1="5" y1="12" x2="9" y2="8" />
+          </svg></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel4" data-slide="next">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="15" y1="16" x2="19" y2="12" />
+            <line x1="15" y1="8" x2="19" y2="12" />
+          </svg></span>
+      </a>
+    </div>
+
+
+
+
+
+    <div class="modal wow animate__animated animate__fadeInUp" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">Comprar producto</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <form action="compraexitosa.html" class="formComprar" method="POST">
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" placeholder="Juan Perez" />
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" placeholder="alguien@mail.com" />
+
+              <label for="celular">Celular:</label>
+              <input type="text" name="celular" placeholder="1122334455" />
+
+              <div class="comentarios">Comentarios:
+                <textarea rows="10" cols="50" placeholder="Inserte su comentario aquí..."></textarea>
+              </div>
+
+              <h3>Método de pago</h3>
+              <div class="metodoPago">
+                <div class="metodoPago metodoPago__check">
+                  <label for="metodopago" class="metodoPago metodoPago__check--label">Efectivo</label>
+                  <input type="radio" name="metodopago" value="efectivo" class="metodoPago metodoPago__check--select" />
+                </div>
+                <div class="metodoPago metodoPago__check">
+                  <label for="metodopago" class="metodoPago metodoPago__check--label">Débito</label>
+                  <input type="radio" name="metodopago" value="debito" class="metodoPago metodoPago__check--select" />
+                </div>
+                <div class="metodoPago metodoPago__check">
+                  <label for="metodopago" class="metodoPago metodoPago__check--label">Crédito</label>
+                  <input type="radio" name="metodopago" value="credito" class="metodoPago metodoPago__check--select" />
+                </div>
+              </div>
+
+              <label for="numerotarjeta">Número de la tarjeta:</label>
+              <input type="text" name="numerotarjeta" placeholder="1111 2222 3333 4444" />
+
+              <label for="nombretitular">Nombre del titular (tal cual figura en la tarjeta):</label>
+              <input type="email" name="nombretitular" placeholder="Perez Juan Alberto" />
+
+              <label for="vencimiento">Fecha de vencimiento:</label>
+              <input type="text" name="vencimiento" placeholder="11/22" />
+              <label for="seguridad">Código de seguridad:</label>
+              <input type="text" name="seguridad" placeholder="123" />
+
+              <label for="acepta" class="acepta">Quiero recibir ofertas vía mail o WhatsApp
+                <input type="checkbox" name="acepta" value="1" /></label>
+
+              <label for="lugar">Lugar de residencia:
+                <select name="lugar">
+                  <option value="caba">CABA</option>
+                  <option value="amba">AMBA</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </label>
+              <div class="acciones">
+                <input type="reset" value="Limpiar campos" class="btn btn-default" />
+                <input type="submit" value="Comprar" class="btn btn-default" />
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <footer>
+    <div class="footer container col-xl-12">
+      <div class="newsletter col">
+        <h4>Te gustaría recibir el newsletter semanal?</h4>
+        <form class="formNewsletter">
+          <label for="email">Email:
+            <input type="email" name="email" placeholder="alguien@mail.com" />
+            <input type="submit" class="enviar" value="Enviar" /></label>
+        </form>
+      </div>
+      <div class="redesSociales col">
+        <ul>
+          <li class="boton"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+              width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#fafad2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg><a href="https://www.instagram.com/silvegan_food/" target="_blank">@silvegan_food</a></li>
+          <li class="boton"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+              width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#fafad2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg><a href="https://www.facebook.com/silvegan_food-104693788088370" target="_blank">
+              silvegan_food</a></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#fafad2" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>+54 9 11 55066350
+          </li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="30"
+              height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#fafad2" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="11" r="3" />
+              <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+            </svg>Lanús</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="js/wow.min.js">
+    new WOW().init();
+  </script>
+</body>
+
+</html>
