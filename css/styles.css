@@ -959,7 +959,7 @@ form {
       display: flex;
       flex-direction: column;
       height: 100vh;
-      width: 50vh;
+      width: 100%;
       justify-content: center; }
       .index .third .queHacemos {
         display: flex;
