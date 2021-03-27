@@ -256,7 +256,7 @@ li,
     transition: all 2s;
     display: flex; }
     .bloque .bloqueFoto .card-img-top {
-      width: auto;
+      width: 297px;
       height: auto; }
     .bloque .bloqueFoto:hover {
       transform: scale(1.5, 1.5);
@@ -347,7 +347,8 @@ li,
   .opiniones__formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    width: 120vh; }
   .opiniones__titulo {
     text-align: center;
     color: #454500;
@@ -532,176 +533,941 @@ form {
 /* ----------------Responsive - Media Queries----------------- */
 @media (max-width: 992px) {
   /* General */
-  body {
+  * {
+    margin: 0;
+    padding: 0; }
+  /* General */
+  h2 {
+    font-size: 30px; }
+  nav {
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap; }
+    nav ul {
+      font-size: 12px;
+      width: 35vh; }
+      nav ul li a {
+        font-size: 12px; }
+      nav ul li ul {
+        width: 20%; }
+  .index {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-  nav {
-    width: 100%; }
-    nav ul {
-      width: 100%; }
-  .section {
-    margin-top: 60px;
-    width: 100%; }
-  h2 {
-    font-size: 40px; }
-  /* Sobre mí */
-  .containerSobreMi {
+    padding: 0; }
+    .index .first {
+      background-image: url(../img/comidaveggie1.jpg);
+      font-family: 'Prata', serif;
+      width: 100vh;
+      height: 45vh;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      opacity: 70%;
+      display: flex;
+      flex-direction: initial;
+      justify-content: center; }
+      .index .first .hola {
+        font-size: 100px;
+        color: rgba(218, 211, 200, 0.973);
+        margin-top: 90px; }
+    .index .second {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 120vh;
+      width: 90%;
+      align-items: center;
+      margin-top: 10px; }
+      .index .second .bienvenido {
+        display: flex;
+        flex-direction: column;
+        justify-items: left; }
+        .index .second .bienvenido h3 {
+          font-family: 'Prata', serif;
+          text-align: left;
+          font-size: 80%; }
+        .index .second .bienvenido p {
+          text-align: left;
+          font-size: 70%; }
+      .index .second .carousel {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        width: 60vh;
+        height: 100vh;
+        padding: 1em;
+        color: white;
+        font-weight: 200;
+        justify-content: center; }
+        .index .second .carousel .deslizable {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 50vh; }
+          .index .second .carousel .deslizable__item {
+            width: 40vh;
+            height: 35vh;
+            margin: 0.5em;
+            padding: .5em;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            transition: all .2s;
+            flex-direction: column; }
+            .index .second .carousel .deslizable__item img {
+              height: 100px;
+              width: 120px;
+              border: black solid 1px;
+              margin-top: 20px; }
+            .index .second .carousel .deslizable__item h6 {
+              color: black;
+              height: 50px;
+              width: 38vh;
+              text-align: center;
+              font-size: 15px;
+              margin: 0; }
+            .index .second .carousel .deslizable__item:hover {
+              background: rgba(255, 255, 255, 0.5);
+              transform: scale(1.1);
+              cursor: pointer; }
+          .index .second .carousel .deslizable .active {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+    .index .third {
+      display: flex;
+      flex-direction: column;
+      height: 150vh;
+      width: 50vh;
+      justify-content: center; }
+      .index .third .queHacemos {
+        display: flex;
+        flex-direction: column; }
+        .index .third .queHacemos h3 {
+          font-size: 25px;
+          font-family: 'Prata', serif; }
+        .index .third .queHacemos p {
+          font-size: 15px; }
+      .index .third .hacemosEsto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%; }
+        .index .third .hacemosEsto div {
+          width: 50vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .index .third .hacemosEsto div span {
+            font-size: 70px; }
+          .index .third .hacemosEsto div h4 {
+            font-size: 20px; }
+          .index .third .hacemosEsto div p {
+            width: 175px;
+            font-size: 18px; }
+    .index .fourth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 30vh; }
+      .index .fourth h3 {
+        font-size: 25px;
+        font-family: 'Prata', serif; }
+      .index .fourth p {
+        font-size: 18px; }
+      .index .fourth a {
+        color: black;
+        font-size: 20px;
+        transition: all 0.5s; }
+        .index .fourth a:hover {
+          font-size: 130%; }
+  /* Productos */
+  #tituloproductos,
+  #viandas,
+  #hamburguesas,
+  #snacks,
+  #platosdulces {
+    font-size: 80%; }
+  .market {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 50px; }
-    .containerSobreMi img {
-      width: 500px;
-      height: 600px;
-      border: solid 1px black; }
-    .containerSobreMi .sobreMi {
-      font-size: 20px;
-      align-self: center;
-      text-align: justify; }
-  /* Contacto */
-  .contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: 0; }
-    .contacto .formContacto p {
-      width: auto; }
-    .contacto .formContacto label {
-      width: auto; }
-    .contacto .formContacto div {
-      width: auto; }
-    .contacto .formContacto .detalles {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 50px 0 50px; }
+    .market .carousel {
+      display: flex;
+      justify-content: center;
+      width: 30vh; }
+      .market .carousel .carousel-inner {
+        width: 30vh; }
+        .market .carousel .carousel-inner .carousel-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30vh; }
+    .market .active {
       display: flex;
       flex-direction: column; }
-  /* Opiniones */
-  .opiniones__formulario {
-    height: auto;
-    margin-top: 50px;
+  .bloque {
+    background-color: #E4FFC8;
+    border: 1px solid green;
+    height: 350px;
+    width: 175px;
+    margin: 10px;
     display: flex;
-    width: auto; }
-    .opiniones__formulario .acciones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s; }
+    .bloque .bloqueFoto {
+      width: 172px;
+      height: 215px;
+      transition: all 2s;
+      display: flex; }
+      .bloque .bloqueFoto .card-img-top {
+        width: 172px;
+        height: auto; }
+      .bloque .bloqueFoto:hover {
+        transform: scale(1.5, 1.5);
+        cursor: pointer;
+        z-index: 2; }
+    .bloque .card-body {
+      width: 300px;
       display: flex;
-      flex-direction: row;
-      padding-right: 300px;
-      align-self: flex-end; }
-  /* Footer */
-  .footer {
-    width: 100%; } }
-
-@media (max-width: 768px) {
-  /* General */
-  .section {
-    margin-top: 60px;
-    width: 100%; }
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      position: static;
+      padding: 0; }
+      .bloque .card-body .card-title {
+        font-size: 12px;
+        width: 170px;
+        text-align: center; }
+      .bloque .card-body .card-text {
+        font-size: 12px;
+        width: 170px; }
+      .bloque .card-body .comprarProd {
+        display: flex;
+        width: 100px;
+        justify-content: center; }
+        .bloque .card-body .comprarProd input {
+          display: flex;
+          border: none;
+          background: lightgoldenrodyellow;
+          margin: 0;
+          font-size: 10px; }
+      .bloque .card-body .comprarProd :hover {
+        text-decoration: underline; }
   /* Sobre mí */
   .containerSobreMi {
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0; }
     .containerSobreMi .foto {
       height: 400px;
       width: auto;
       display: flex; }
     .containerSobreMi .sobreMi {
       display: flex;
-      font-size: 80%;
-      text-align: center; }
-  /* Contacto */
-  .contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: 0; }
-    .contacto .formContacto p {
-      width: auto; }
-    .contacto .formContacto label {
-      width: auto; }
-    .contacto .formContacto div {
-      width: auto; }
-    .contacto .formContacto .detalles {
-      display: flex;
-      flex-direction: column; }
+      font-size: 70%;
+      text-align: center;
+      margin: 20px 0 20px 0; }
   /* Opiniones */
   .opiniones {
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    align-items: center;
+    width: 60vh;
+    flex-wrap: wrap; }
+    .opiniones h2 {
+      font-size: 80%; }
+    .opiniones .carousel {
+      margin-top: 30px;
+      display: flex;
+      align-items: center; }
+      .opiniones .carousel .carousel-inner .carousel-item {
+        width: 60vh;
+        padding: 0;
+        align-items: center;
+        flex-direction: column; }
+    .opiniones .active {
+      display: flex;
+      flex-direction: column; }
+    .opiniones__formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60vh; }
+      .opiniones__formulario label, .opiniones__formulario input, .opiniones__formulario div, .opiniones__formulario textarea {
+        width: 60vh; }
+      .opiniones__formulario .acciones {
+        padding: 0; }
     .opiniones__titulo {
       text-align: center;
       color: #454500;
       display: flex;
       justify-content: center; }
       .opiniones__titulo--titulogrande {
-        font-size: 20px; }
-    .opiniones__caja {
-      display: grid;
-      grid-template-columns: repeat(3, 130px);
-      grid-template-rows: repeat(2, 155px);
-      grid-template-areas: 155px; }
-      .opiniones__caja--cuadrado {
-        height: 170px;
-        width: 130px;
-        text-align: justify;
-        font-weight: bold;
-        display: flex; }
-      .opiniones__caja--nombres {
+        font-family: 'Darker Grotesque', sans-serif;
+        text-decoration: underline;
+        font-size: 50px; }
+      .opiniones__titulo--titulochico {
+        font-family: 'Darker Grotesque', sans-serif; }
+  .caja {
+    width: 30vh;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background-color: rgba(252, 252, 252, 0.315);
+    transition: all 1.5s;
+    margin: 10px 0px 10px 0px; }
+    .caja:hover {
+      transform: scale(1.1);
+      cursor: pointer; }
+    .caja .nombre {
+      display: flex;
+      position: absolute;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-size: 10px; }
+    .caja .contenido {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      margin-top: 15px;
+      padding-top: 20px; } }
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0; }
+  /* General */
+  h2 {
+    font-size: 30px; }
+  nav {
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap; }
+    nav ul {
+      font-size: 12px;
+      width: 35vh; }
+      nav ul li a {
+        font-size: 12px; }
+      nav ul li ul {
+        width: 20%; }
+  .index {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+    .index .first {
+      background-image: url(../img/comidaveggie1.jpg);
+      font-family: 'Prata', serif;
+      width: 100vh;
+      height: 45vh;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      opacity: 70%;
+      display: flex;
+      flex-direction: initial;
+      justify-content: center; }
+      .index .first .hola {
+        font-size: 100px;
+        color: rgba(218, 211, 200, 0.973);
+        margin-top: 90px; }
+    .index .second {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 110vh;
+      width: 90%;
+      align-items: center;
+      margin-top: 10px; }
+      .index .second .bienvenido {
         display: flex;
-        justify-content: center;
-        text-align: center;
-        position: absolute;
-        padding-left: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        font-size: 14px; }
-      .opiniones__caja--contenido {
+        flex-direction: column;
+        justify-items: left; }
+        .index .second .bienvenido h3 {
+          font-family: 'Prata', serif;
+          text-align: left;
+          font-size: 80%; }
+        .index .second .bienvenido p {
+          text-align: left;
+          font-size: 70%; }
+      .index .second .carousel {
         display: flex;
-        justify-content: flex-end;
-        font-size: 10px;
-        margin-top: 30px; }
+        flex-direction: row;
+        background: none;
+        width: 60vh;
+        height: 80vh;
+        padding: 1em;
+        color: white;
+        font-weight: 200;
+        justify-content: center; }
+        .index .second .carousel .deslizable {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 50vh; }
+          .index .second .carousel .deslizable__item {
+            width: 40vh;
+            height: 35vh;
+            margin: 0.5em;
+            padding: .5em;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            transition: all .2s;
+            flex-direction: column; }
+            .index .second .carousel .deslizable__item img {
+              height: 100px;
+              width: 120px;
+              border: black solid 1px;
+              margin-top: 20px; }
+            .index .second .carousel .deslizable__item h6 {
+              color: black;
+              height: 50px;
+              width: 38vh;
+              text-align: center;
+              font-size: 15px;
+              margin: 0; }
+            .index .second .carousel .deslizable__item:hover {
+              background: rgba(255, 255, 255, 0.5);
+              transform: scale(1.1);
+              cursor: pointer; }
+          .index .second .carousel .deslizable .active {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+    .index .third {
+      display: flex;
+      flex-direction: column;
+      height: 130vh;
+      width: 50vh;
+      justify-content: center; }
+      .index .third .queHacemos {
+        display: flex;
+        flex-direction: column; }
+        .index .third .queHacemos h3 {
+          font-size: 25px;
+          font-family: 'Prata', serif; }
+        .index .third .queHacemos p {
+          font-size: 15px; }
+      .index .third .hacemosEsto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%; }
+        .index .third .hacemosEsto div {
+          width: 50vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .index .third .hacemosEsto div span {
+            font-size: 70px; }
+          .index .third .hacemosEsto div h4 {
+            font-size: 20px; }
+          .index .third .hacemosEsto div p {
+            width: 175px;
+            font-size: 18px; }
+    .index .fourth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 30vh; }
+      .index .fourth h3 {
+        font-size: 25px;
+        font-family: 'Prata', serif; }
+      .index .fourth p {
+        font-size: 18px; }
+      .index .fourth a {
+        color: black;
+        font-size: 20px;
+        transition: all 0.5s; }
+        .index .fourth a:hover {
+          font-size: 130%; }
+  /* Productos */
+  #tituloproductos,
+  #viandas,
+  #hamburguesas,
+  #snacks,
+  #platosdulces {
+    font-size: 80%; }
+  .market {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 50px 0 50px; }
+    .market .carousel {
+      display: flex;
+      justify-content: center;
+      width: 30vh; }
+      .market .carousel .carousel-inner {
+        width: 30vh; }
+        .market .carousel .carousel-inner .carousel-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30vh; }
+    .market .active {
+      display: flex;
+      flex-direction: column; }
+  .bloque {
+    background-color: #E4FFC8;
+    border: 1px solid green;
+    height: 350px;
+    width: 175px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s; }
+    .bloque .bloqueFoto {
+      width: 172px;
+      height: 215px;
+      transition: all 2s;
+      display: flex; }
+      .bloque .bloqueFoto .card-img-top {
+        width: 172px;
+        height: auto; }
+      .bloque .bloqueFoto:hover {
+        transform: scale(1.5, 1.5);
+        cursor: pointer;
+        z-index: 2; }
+    .bloque .card-body {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      position: static;
+      padding: 0; }
+      .bloque .card-body .card-title {
+        font-size: 12px;
+        width: 170px;
+        text-align: center; }
+      .bloque .card-body .card-text {
+        font-size: 12px;
+        width: 170px; }
+      .bloque .card-body .comprarProd {
+        display: flex;
+        width: 100px;
+        justify-content: center; }
+        .bloque .card-body .comprarProd input {
+          display: flex;
+          border: none;
+          background: lightgoldenrodyellow;
+          margin: 0;
+          font-size: 10px; }
+      .bloque .card-body .comprarProd :hover {
+        text-decoration: underline; }
+  /* Sobre mí */
+  .containerSobreMi {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0; }
+    .containerSobreMi .foto {
+      height: 400px;
+      width: auto;
+      display: flex; }
+    .containerSobreMi .sobreMi {
+      display: flex;
+      font-size: 70%;
+      text-align: center;
+      margin: 20px 0 20px 0; }
+  /* Opiniones */
+  .opiniones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vh;
+    flex-wrap: wrap; }
+    .opiniones h2 {
+      font-size: 80%; }
+    .opiniones .carousel {
+      margin-top: 30px;
+      display: flex;
+      align-items: center; }
+      .opiniones .carousel .carousel-inner .carousel-item {
+        width: 60vh;
+        padding: 0;
+        align-items: center;
+        flex-direction: column; }
+    .opiniones .active {
+      display: flex;
+      flex-direction: column; }
     .opiniones__formulario {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
-      margin-top: 50px; }
-      .opiniones__formulario div {
-        width: 400px;
-        align-self: center; }
-      .opiniones__formulario input {
-        width: 400px;
-        align-self: center; }
-      .opiniones__formulario textarea {
-        width: 400px;
-        align-self: center; } }
+      width: 60vh; }
+      .opiniones__formulario label, .opiniones__formulario input, .opiniones__formulario div, .opiniones__formulario textarea {
+        width: 60vh; }
+      .opiniones__formulario .acciones {
+        padding: 0; }
+    .opiniones__titulo {
+      text-align: center;
+      color: #454500;
+      display: flex;
+      justify-content: center; }
+      .opiniones__titulo--titulogrande {
+        font-family: 'Darker Grotesque', sans-serif;
+        text-decoration: underline;
+        font-size: 50px; }
+      .opiniones__titulo--titulochico {
+        font-family: 'Darker Grotesque', sans-serif; }
+  .caja {
+    width: 30vh;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background-color: rgba(252, 252, 252, 0.315);
+    transition: all 1.5s;
+    margin: 10px 0px 10px 0px; }
+    .caja:hover {
+      transform: scale(1.1);
+      cursor: pointer; }
+    .caja .nombre {
+      display: flex;
+      position: absolute;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-size: 10px; }
+    .caja .contenido {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      margin-top: 15px;
+      padding-top: 20px; } }
 
 @media (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0; }
   /* General */
   h2 {
     font-size: 30px; }
-  nav ul {
-    font-size: 12px; } }
-
-/* Seccion Productos */
-.market {
-  display: flex;
-  flex-wrap: wrap;
-  animation-name: none; }
-  .market .bloque .bloqueFoto img {
-    height: auto;
-    width: 297px; }
-  .market .comprarProd input {
-    height: 30px;
-    width: auto; }
-  .market .productosDulces {
+  nav {
+    width: 57vh;
     display: flex;
-    height: 100vmax;
-    flex-direction: row;
-    justify-self: flex-end;
-    position: static;
-    margin-top: 5vmax; }
+    flex-wrap: wrap; }
+    nav ul {
+      font-size: 12px;
+      width: 100%; }
+      nav ul li a {
+        font-size: 12px; }
+      nav ul li ul {
+        width: 20%; }
+  .index {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+    .index .first {
+      background-image: url(../img/comidaveggie1.jpg);
+      font-family: 'Prata', serif;
+      width: 100vh;
+      height: 70vh;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      opacity: 70%;
+      display: flex;
+      flex-direction: initial;
+      justify-content: center; }
+      .index .first .hola {
+        font-size: 100px;
+        color: rgba(218, 211, 200, 0.973);
+        margin-top: 90px; }
+    .index .second {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 130vh;
+      width: 90%;
+      align-items: center;
+      margin-top: 10px; }
+      .index .second .bienvenido {
+        display: flex;
+        flex-direction: column;
+        justify-items: left; }
+        .index .second .bienvenido h3 {
+          font-family: 'Prata', serif;
+          text-align: left;
+          font-size: 80%; }
+        .index .second .bienvenido p {
+          text-align: left;
+          font-size: 70%; }
+      .index .second .carousel {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        width: 60vh;
+        height: 100vh;
+        padding: 1em;
+        color: white;
+        font-weight: 200;
+        justify-content: center; }
+        .index .second .carousel .deslizable {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 50vh; }
+          .index .second .carousel .deslizable__item {
+            width: 40vh;
+            height: 35vh;
+            margin: 0.5em;
+            padding: .5em;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            transition: all .2s;
+            flex-direction: column; }
+            .index .second .carousel .deslizable__item img {
+              height: 100px;
+              width: 120px;
+              border: black solid 1px;
+              margin-top: 20px; }
+            .index .second .carousel .deslizable__item h6 {
+              color: black;
+              height: 50px;
+              width: 38vh;
+              text-align: center;
+              font-size: 15px;
+              margin: 0; }
+            .index .second .carousel .deslizable__item:hover {
+              background: rgba(255, 255, 255, 0.5);
+              transform: scale(1.1);
+              cursor: pointer; }
+          .index .second .carousel .deslizable .active {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+    .index .third {
+      display: flex;
+      flex-direction: column;
+      height: 150vh;
+      width: 50vh;
+      justify-content: center; }
+      .index .third .queHacemos {
+        display: flex;
+        flex-direction: column; }
+        .index .third .queHacemos h3 {
+          font-size: 25px;
+          font-family: 'Prata', serif; }
+        .index .third .queHacemos p {
+          font-size: 15px; }
+      .index .third .hacemosEsto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%; }
+        .index .third .hacemosEsto div {
+          width: 50vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .index .third .hacemosEsto div span {
+            font-size: 70px; }
+          .index .third .hacemosEsto div h4 {
+            font-size: 20px; }
+          .index .third .hacemosEsto div p {
+            width: 175px;
+            font-size: 18px; }
+    .index .fourth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 35vh;
+      margin-top: 20px; }
+      .index .fourth h3 {
+        font-size: 25px;
+        font-family: 'Prata', serif; }
+      .index .fourth p {
+        font-size: 18px; }
+      .index .fourth a {
+        color: black;
+        font-size: 20px;
+        transition: all 0.5s; }
+        .index .fourth a:hover {
+          font-size: 130%; }
+  /* Productos */
+  #tituloproductos,
+  #viandas,
+  #hamburguesas,
+  #snacks,
+  #platosdulces {
+    font-size: 80%; }
+  .market {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 50px 0 50px; }
+    .market .carousel {
+      display: flex;
+      justify-content: center;
+      width: 30vh; }
+      .market .carousel .carousel-inner {
+        width: 30vh; }
+        .market .carousel .carousel-inner .carousel-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30vh; }
+    .market .active {
+      display: flex;
+      flex-direction: column; }
+  .bloque {
+    background-color: #E4FFC8;
+    border: 1px solid green;
+    height: 350px;
+    width: 175px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s; }
+    .bloque .bloqueFoto {
+      width: 172px;
+      height: 215px;
+      transition: all 2s;
+      display: flex; }
+      .bloque .bloqueFoto .card-img-top {
+        width: 172px;
+        height: auto; }
+      .bloque .bloqueFoto:hover {
+        transform: scale(1.5, 1.5);
+        cursor: pointer;
+        z-index: 2; }
+    .bloque .card-body {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      position: static;
+      padding: 0; }
+      .bloque .card-body .card-title {
+        font-size: 12px;
+        width: 170px;
+        text-align: center; }
+      .bloque .card-body .card-text {
+        font-size: 12px;
+        width: 170px; }
+      .bloque .card-body .comprarProd {
+        display: flex;
+        width: 100px;
+        justify-content: center; }
+        .bloque .card-body .comprarProd input {
+          display: flex;
+          border: none;
+          background: lightgoldenrodyellow;
+          margin: 0;
+          font-size: 10px; }
+      .bloque .card-body .comprarProd :hover {
+        text-decoration: underline; }
+  /* Sobre mí */
+  .containerSobreMi {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0; }
+    .containerSobreMi .foto {
+      height: 400px;
+      width: auto;
+      display: flex; }
+    .containerSobreMi .sobreMi {
+      display: flex;
+      font-size: 70%;
+      text-align: center;
+      margin: 20px 0 20px 0; }
+  /* Opiniones */
+  .opiniones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vh;
+    flex-wrap: wrap; }
+    .opiniones h2 {
+      font-size: 80%; }
+    .opiniones .carousel {
+      margin-top: 30px;
+      display: flex;
+      align-items: center; }
+      .opiniones .carousel .carousel-inner .carousel-item {
+        width: 60vh;
+        padding: 0;
+        align-items: center;
+        flex-direction: column; }
+    .opiniones .active {
+      display: flex;
+      flex-direction: column; }
+    .opiniones__formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45vh; }
+      .opiniones__formulario label, .opiniones__formulario input, .opiniones__formulario div, .opiniones__formulario textarea {
+        width: 45vh; }
+      .opiniones__formulario .acciones {
+        padding: 0; }
+    .opiniones__titulo {
+      text-align: center;
+      color: #454500;
+      display: flex;
+      justify-content: center; }
+      .opiniones__titulo--titulogrande {
+        font-family: 'Darker Grotesque', sans-serif;
+        text-decoration: underline;
+        font-size: 50px; }
+      .opiniones__titulo--titulochico {
+        font-family: 'Darker Grotesque', sans-serif; }
+  .caja {
+    width: 30vh;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background-color: rgba(252, 252, 252, 0.315);
+    transition: all 1.5s;
+    margin: 10px 0px 10px 0px; }
+    .caja:hover {
+      transform: scale(1.1);
+      cursor: pointer; }
+    .caja .nombre {
+      display: flex;
+      position: absolute;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-size: 10px; }
+    .caja .contenido {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      margin-top: 15px;
+      padding-top: 20px; } }
 
 /* Contacto */
 .contacto {
@@ -709,12 +1475,17 @@ form {
   height: auto;
   display: flex;
   margin: 0; }
+  .contacto p {
+    font-size: 70%; }
   .contacto .formContacto p {
-    width: auto; }
+    width: auto;
+    font-size: 75%; }
   .contacto .formContacto label {
-    width: auto; }
+    width: auto;
+    font-size: 75%; }
   .contacto .formContacto div {
-    width: auto; }
+    width: auto;
+    font-size: 75%; }
   .contacto .formContacto .detalles {
     display: flex;
     flex-direction: column; }
