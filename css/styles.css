@@ -1444,7 +1444,7 @@ form {
       .opiniones__titulo--titulochico {
         font-family: 'Darker Grotesque', sans-serif; }
   .caja {
-    width: 100%;
+    width: 50%;
     height: 165px;
     display: flex;
     flex-direction: column;
@@ -1452,7 +1452,7 @@ form {
     padding: 0;
     background-color: rgba(252, 252, 252, 0.315);
     transition: all 1.5s;
-    margin: 0; }
+    margin: 10px 0px 10px 0px; }
     .caja:hover {
       transform: scale(1.1);
       cursor: pointer; }
