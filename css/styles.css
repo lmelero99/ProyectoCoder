@@ -1201,7 +1201,7 @@ form {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 25%;
+      height: 30%;
       width: 90%;
       align-items: center;
       margin-top: 10px; }
@@ -1266,7 +1266,8 @@ form {
       flex-direction: column;
       height: 160%;
       width: 50vh;
-      justify-content: center; }
+      justify-content: center;
+      flex-shrink: 2; }
       .index .third .queHacemos {
         display: flex;
         flex-direction: column; }
@@ -1470,7 +1471,10 @@ form {
       justify-content: flex-end;
       font-size: 12px;
       margin-top: 15px;
-      padding-top: 20px; } }
+      padding-top: 20px; }
+  .compraExitosa {
+    margin: 0;
+    padding: 0; } }
 
 /* Contacto */
 .contacto {
