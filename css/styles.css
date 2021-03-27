@@ -1444,7 +1444,7 @@ form {
       .opiniones__titulo--titulochico {
         font-family: 'Darker Grotesque', sans-serif; }
   .caja {
-    width: 30%;
+    width: 60%;
     height: 165px;
     display: flex;
     flex-direction: column;
