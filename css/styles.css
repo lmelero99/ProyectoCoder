@@ -540,7 +540,7 @@ form {
   h2 {
     font-size: 30px; }
   nav {
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; }
     nav ul {
@@ -852,7 +852,7 @@ form {
   h2 {
     font-size: 30px; }
   nav {
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; }
     nav ul {
@@ -1164,7 +1164,7 @@ form {
   h2 {
     font-size: 30px; }
   nav {
-    width: 57vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; }
     nav ul {
