@@ -905,7 +905,7 @@ form {
         display: flex;
         flex-direction: row;
         background: none;
-        width: 60vh;
+        width: 90%;
         height: 80vh;
         padding: 1em;
         color: white;
