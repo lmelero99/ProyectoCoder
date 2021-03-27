@@ -915,7 +915,7 @@ form {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: 50vh; }
+          width: 60%; }
           .index .second .carousel .deslizable__item {
             width: 70%;
             height: 35vh;
