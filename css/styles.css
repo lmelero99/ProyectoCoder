@@ -957,7 +957,7 @@ form {
             align-items: center; }
     .index .third {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 100vh;
       width: 50vh;
       justify-content: center; }
@@ -975,7 +975,7 @@ form {
         flex-wrap: wrap;
         width: 100%; }
         .index .third .hacemosEsto div {
-          width: 50vh;
+          width: 10vh;
           display: flex;
           flex-direction: column;
           align-items: center; }
