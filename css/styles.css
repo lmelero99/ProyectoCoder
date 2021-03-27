@@ -893,7 +893,7 @@ form {
         margin-top: 90px; }
     .index .second {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       height: 110vh;
       width: 90%;
@@ -953,7 +953,7 @@ form {
               cursor: pointer; }
           .index .second .carousel .deslizable .active {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center; }
     .index .third {
       display: flex;
@@ -971,7 +971,7 @@ form {
           font-size: 15px; }
       .index .third .hacemosEsto {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%; }
         .index .third .hacemosEsto div {

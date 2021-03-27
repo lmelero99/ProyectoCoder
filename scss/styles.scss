@@ -1338,7 +1338,7 @@ form {
 
         .second {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
             height: 110vh;
             width: 90%;
@@ -1420,7 +1420,7 @@ form {
 
                     .active {
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         align-items: center;
                     }
 
@@ -1454,7 +1454,7 @@ form {
 
             .hacemosEsto {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
 
