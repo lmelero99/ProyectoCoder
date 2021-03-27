@@ -1452,7 +1452,7 @@ form {
     padding: 0;
     background-color: rgba(252, 252, 252, 0.315);
     transition: all 1.5s;
-    margin: 10px 0px 10px 0px; }
+    margin: 0; }
     .caja:hover {
       transform: scale(1.1);
       cursor: pointer; }
