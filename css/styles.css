@@ -1261,7 +1261,7 @@ form {
     .index .third {
       display: flex;
       flex-direction: column;
-      height: 130%;
+      height: 160%;
       width: 50vh;
       justify-content: center; }
       .index .third .queHacemos {
