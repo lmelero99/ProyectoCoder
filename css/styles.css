@@ -1432,6 +1432,19 @@ form {
       font-size: 70%;
       text-align: center;
       margin: 20px 0 20px 0; }
+  /* Contacto */
+  .contacto {
+    z-index: 2; }
+    .contacto p,
+    .contacto div,
+    .contacto input,
+    .contacto textarea,
+    .contacto label {
+      font-size: 12px; }
+    .contacto .detalles {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
   /* Opiniones */
   .opiniones {
     display: flex;

@@ -2171,6 +2171,26 @@ form {
         }
     }
 
+    /* Contacto */
+    .contacto {
+
+        z-index: 2;
+
+        p,
+        div,
+        input,
+        textarea,
+        label {
+            font-size: 12px;
+        }
+
+        .detalles {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
     /* Opiniones */
 
     .opiniones {
