@@ -1104,7 +1104,7 @@ form {
     flex-direction: column; }
     .contacto .detalles {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column; }
   /* Opiniones */
   .opiniones {
     display: flex;
