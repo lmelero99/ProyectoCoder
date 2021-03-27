@@ -919,8 +919,8 @@ form {
           .index .second .carousel .deslizable__item {
             width: 50%;
             height: 35vh;
-            margin: 0.5em;
-            padding: .5em;
+            margin: 0;
+            padding: 0;
             background: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
