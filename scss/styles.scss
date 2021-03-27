@@ -1905,6 +1905,10 @@ form {
     
     
                 }
+
+                .carousel-control-prev, .carousel-control-next {
+                    height: inherit;
+                }
     
     
             }

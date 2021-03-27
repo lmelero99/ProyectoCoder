@@ -1261,6 +1261,8 @@ form {
             display: flex;
             flex-direction: column;
             align-items: center; }
+        .index .second .carousel .carousel-control-prev, .index .second .carousel .carousel-control-next {
+          height: inherit; }
     .index .third {
       display: flex;
       flex-direction: column;
