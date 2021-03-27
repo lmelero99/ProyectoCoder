@@ -1217,7 +1217,7 @@ form {
         display: flex;
         flex-direction: row;
         background: none;
-        width: 60vh;
+        width: 90%;
         height: 100vh;
         padding: 1em;
         color: white;
