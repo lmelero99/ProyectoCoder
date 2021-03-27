@@ -801,12 +801,12 @@ form {
         flex-wrap: wrap;
 
         ul {
-            font-size: 12px;
-            width: 35vh;
+            font-size: 20px;
+            width: 100%;
 
             li {
                 a {
-                    font-size: 12px;
+                    font-size: 20px;
                 }
 
                 ul {
@@ -821,12 +821,12 @@ form {
         display: flex;
         flex-direction: column;
         padding: 0;
-    
+
         .first {
             background-image: url(../img/comidaveggie1.jpg);
             font-family: 'Prata', serif;
             width: 100%;
-            height: 45vh;
+            height: 35vh;
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
@@ -834,14 +834,14 @@ form {
             display: flex;
             flex-direction: initial;
             justify-content: center;
-    
+
             .hola {
                 font-size: 100px;
                 color: rgba(218, 211, 200, 0.973);
                 margin-top: 90px;
             }
         }
-    
+
         .second {
             display: flex;
             flex-direction: column;
@@ -850,27 +850,27 @@ form {
             width: 90%;
             align-items: center;
             margin-top: 10px;
-    
+
             .bienvenido {
                 display: flex;
                 flex-direction: column;
                 justify-items: left;
-    
+
                 h3 {
                     font-family: 'Prata', serif;
                     text-align: left;
                     font-size: 80%;
                 }
-    
+
                 p {
                     text-align: left;
                     font-size: 70%;
                 }
             }
-    
-    
+
+
             .carousel {
-    
+
                 display: flex;
                 flex-direction: row;
                 background: none;
@@ -880,16 +880,16 @@ form {
                 color: white;
                 font-weight: 200;
                 justify-content: center;
-    
-    
+
+
                 .deslizable {
-    
+
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 50vh;
-    
-    
+
+
                     &__item {
                         width: 40vh;
                         height: 35vh;
@@ -900,84 +900,84 @@ form {
                         align-items: center;
                         transition: all .2s;
                         flex-direction: column;
-    
+
                         img {
                             height: 100px;
                             width: 120px;
                             border: black solid 1px;
                             margin-top: 20px;
                         }
-    
+
                         h6 {
                             color: black;
                             height: 50px;
                             width: 38vh;
                             text-align: center;
                             font-size: 15px;
-                            margin:0;
+                            margin: 0;
                         }
-    
+
                         &:hover {
                             background: rgba(255, 255, 255, .5);
                             transform: scale(1.1);
                             cursor: pointer;
                         }
                     }
-    
+
                     .active {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
         }
-    
+
         .third {
             display: flex;
             flex-direction: column;
             height: 150vh;
             width: 50vh;
             justify-content: center;
-    
+
             .queHacemos {
                 display: flex;
                 flex-direction: column;
-    
+
                 h3 {
                     font-size: 25px;
                     font-family: 'Prata', serif;
                 }
-    
+
                 p {
                     font-size: 15px;
                 }
             }
-    
+
             .hacemosEsto {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 width: 100%;
-    
+
                 div {
                     width: 50vh;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
+
                     span {
                         font-size: 70px;
                     }
-    
+
                     h4 {
                         font-size: 20px;
                     }
-    
+
                     p {
                         width: 175px;
                         font-size: 18px;
@@ -985,35 +985,35 @@ form {
                 }
             }
         }
-    
+
         .fourth {
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 30vh;
-    
+
             h3 {
                 font-size: 25px;
                 font-family: 'Prata', serif;
             }
-    
+
             p {
                 font-size: 18px;
             }
-    
+
             a {
                 color: black;
                 font-size: 20px;
                 transition: all 0.5s;
-    
+
                 &:hover {
                     font-size: 130%;
                 }
             }
-    
+
         }
     }
-    
+
 
     /* Productos */
 
@@ -1138,26 +1138,26 @@ form {
 
     /* Sobre mí */
 
-.containerSobreMi {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-
-    .foto {
-        height: 400px;
-        width: auto;
+    .containerSobreMi {
+        width: 300px;
         display: flex;
-    }
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
 
-    .sobreMi {
-        display: flex;
-        font-size: 70%;
-        text-align: center;
-        margin: 20px 0 20px 0;
+        .foto {
+            height: 400px;
+            width: auto;
+            display: flex;
+        }
+
+        .sobreMi {
+            display: flex;
+            font-size: 70%;
+            text-align: center;
+            margin: 20px 0 20px 0;
+        }
     }
-}
 
     /* Opiniones */
 
@@ -1166,43 +1166,46 @@ form {
         flex-direction: column;
         align-items: center;
         width: 60vh;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
 
         h2 {
             font-size: 80%;
         }
-    
+
         .carousel {
             margin-top: 30px;
             display: flex;
-            align-items:center;
-    
+            align-items: center;
+
             .carousel-inner {
-    
+
                 .carousel-item {
                     width: 60vh;
                     padding: 0;
                     align-items: center;
                     flex-direction: column;
                 }
-    
+
             }
-    
+
         }
-        
+
         .active {
             display: flex;
             flex-direction: column;
         }
-    
-    
+
+
         &__formulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 60vh;
 
-            label, input, div, textarea {
+            label,
+            input,
+            div,
+            textarea {
                 width: 60vh;
             }
 
@@ -1210,25 +1213,25 @@ form {
                 padding: 0;
             }
         }
-    
+
         &__titulo {
             text-align: center;
             color: #454500;
             display: flex;
             justify-content: center;
-    
+
             &--titulogrande {
                 font-family: 'Darker Grotesque', sans-serif;
                 text-decoration: underline;
                 font-size: 50px;
             }
-    
+
             &--titulochico {
                 font-family: 'Darker Grotesque', sans-serif;
             }
         }
     }
-    
+
     .caja {
         width: 30vh;
         height: 165px;
@@ -1239,12 +1242,12 @@ form {
         background-color: rgba(252, 252, 252, 0.315);
         transition: all 1.5s;
         margin: 10px 0px 10px 0px;
-    
+
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
         }
-    
+
         .nombre {
             display: flex;
             position: absolute;
@@ -1252,7 +1255,7 @@ form {
             margin-bottom: 10px;
             font-size: 10px;
         }
-    
+
         .contenido {
             display: flex;
             justify-content: flex-end;
@@ -1260,7 +1263,7 @@ form {
             margin-top: 15px;
             padding-top: 20px;
         }
-    
+
     }
 
 }
@@ -1284,16 +1287,24 @@ form {
         flex-wrap: wrap;
 
         ul {
-            font-size: 12px;
-            width: 35vh;
+            font-size: 16px;
+            width: 100%;
 
             li {
                 a {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
 
                 ul {
-                    width: 20%;
+                    display: none;
+                    position: absolute;
+                    width: 150px;
+                    height: 100px;
+
+                    li {
+                        background-color: seagreen;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -1304,12 +1315,12 @@ form {
         display: flex;
         flex-direction: column;
         padding: 0;
-    
+
         .first {
             background-image: url(../img/comidaveggie1.jpg);
             font-family: 'Prata', serif;
             width: 100%;
-            height: 45vh;
+            height: 35vh;
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
@@ -1317,14 +1328,14 @@ form {
             display: flex;
             flex-direction: initial;
             justify-content: center;
-    
+
             .hola {
                 font-size: 100px;
                 color: rgba(218, 211, 200, 0.973);
                 margin-top: 90px;
             }
         }
-    
+
         .second {
             display: flex;
             flex-direction: column;
@@ -1333,27 +1344,27 @@ form {
             width: 90%;
             align-items: center;
             margin-top: 10px;
-    
+
             .bienvenido {
                 display: flex;
                 flex-direction: column;
                 justify-items: left;
-    
+
                 h3 {
                     font-family: 'Prata', serif;
                     text-align: left;
                     font-size: 80%;
                 }
-    
+
                 p {
                     text-align: left;
                     font-size: 70%;
                 }
             }
-    
-    
+
+
             .carousel {
-    
+
                 display: flex;
                 flex-direction: row;
                 background: none;
@@ -1363,16 +1374,16 @@ form {
                 color: white;
                 font-weight: 200;
                 justify-content: center;
-    
-    
+
+
                 .deslizable {
-    
+
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 60%;
-    
-    
+
+
                     &__item {
                         width: 50%;
                         height: 35vh;
@@ -1383,84 +1394,84 @@ form {
                         align-items: center;
                         transition: all .2s;
                         flex-direction: column;
-    
+
                         img {
                             height: 100px;
                             width: 120px;
                             border: black solid 1px;
                             margin-top: 20px;
                         }
-    
+
                         h6 {
                             color: black;
                             height: 50px;
                             width: 38vh;
                             text-align: center;
                             font-size: 15px;
-                            margin:0;
+                            margin: 0;
                         }
-    
+
                         &:hover {
                             background: rgba(255, 255, 255, .5);
                             transform: scale(1.1);
                             cursor: pointer;
                         }
                     }
-    
+
                     .active {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
         }
-    
+
         .third {
             display: flex;
             flex-direction: column;
             height: 130vh;
             width: 50vh;
             justify-content: center;
-    
+
             .queHacemos {
                 display: flex;
                 flex-direction: column;
-    
+
                 h3 {
                     font-size: 25px;
                     font-family: 'Prata', serif;
                 }
-    
+
                 p {
                     font-size: 15px;
                 }
             }
-    
+
             .hacemosEsto {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 width: 100%;
-    
+
                 div {
                     width: 50vh;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
+
                     span {
                         font-size: 70px;
                     }
-    
+
                     h4 {
                         font-size: 20px;
                     }
-    
+
                     p {
                         width: 175px;
                         font-size: 18px;
@@ -1468,35 +1479,35 @@ form {
                 }
             }
         }
-    
+
         .fourth {
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 30vh;
-    
+
             h3 {
                 font-size: 25px;
                 font-family: 'Prata', serif;
             }
-    
+
             p {
                 font-size: 18px;
             }
-    
+
             a {
                 color: black;
                 font-size: 20px;
                 transition: all 0.5s;
-    
+
                 &:hover {
                     font-size: 130%;
                 }
             }
-    
+
         }
     }
-    
+
 
     /* Productos */
 
@@ -1621,26 +1632,26 @@ form {
 
     /* Sobre mí */
 
-.containerSobreMi {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-
-    .foto {
-        height: 400px;
-        width: auto;
+    .containerSobreMi {
+        width: 300px;
         display: flex;
-    }
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
 
-    .sobreMi {
-        display: flex;
-        font-size: 70%;
-        text-align: center;
-        margin: 20px 0 20px 0;
+        .foto {
+            height: 400px;
+            width: auto;
+            display: flex;
+        }
+
+        .sobreMi {
+            display: flex;
+            font-size: 70%;
+            text-align: center;
+            margin: 20px 0 20px 0;
+        }
     }
-}
 
     /* Opiniones */
 
@@ -1649,43 +1660,46 @@ form {
         flex-direction: column;
         align-items: center;
         width: 60vh;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
 
         h2 {
             font-size: 80%;
         }
-    
+
         .carousel {
             margin-top: 30px;
             display: flex;
-            align-items:center;
-    
+            align-items: center;
+
             .carousel-inner {
-    
+
                 .carousel-item {
                     width: 60vh;
                     padding: 0;
                     align-items: center;
                     flex-direction: column;
                 }
-    
+
             }
-    
+
         }
-        
+
         .active {
             display: flex;
             flex-direction: column;
         }
-    
-    
+
+
         &__formulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 60vh;
 
-            label, input, div, textarea {
+            label,
+            input,
+            div,
+            textarea {
                 width: 60vh;
             }
 
@@ -1693,25 +1707,25 @@ form {
                 padding: 0;
             }
         }
-    
+
         &__titulo {
             text-align: center;
             color: #454500;
             display: flex;
             justify-content: center;
-    
+
             &--titulogrande {
                 font-family: 'Darker Grotesque', sans-serif;
                 text-decoration: underline;
                 font-size: 50px;
             }
-    
+
             &--titulochico {
                 font-family: 'Darker Grotesque', sans-serif;
             }
         }
     }
-    
+
     .caja {
         width: 30vh;
         height: 165px;
@@ -1722,12 +1736,12 @@ form {
         background-color: rgba(252, 252, 252, 0.315);
         transition: all 1.5s;
         margin: 10px 0px 10px 0px;
-    
+
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
         }
-    
+
         .nombre {
             display: flex;
             position: absolute;
@@ -1735,7 +1749,7 @@ form {
             margin-bottom: 10px;
             font-size: 10px;
         }
-    
+
         .contenido {
             display: flex;
             justify-content: flex-end;
@@ -1743,7 +1757,7 @@ form {
             margin-top: 15px;
             padding-top: 20px;
         }
-    
+
     }
 
 
@@ -1755,7 +1769,7 @@ form {
         margin: 0;
         padding: 0;
     }
-    
+
 
 
     /* General */
@@ -1784,7 +1798,13 @@ form {
 
                 ul {
                     width: 20%;
+
+                    &:hover {
+                        display: block;
+                        padding-top: 40px;
+                    }
                 }
+
             }
         }
     }
@@ -1794,7 +1814,7 @@ form {
         display: flex;
         flex-direction: column;
         padding: 0;
-    
+
         .first {
             background-image: url(../img/comidaveggie1.jpg);
             font-family: 'Prata', serif;
@@ -1807,14 +1827,14 @@ form {
             display: flex;
             flex-direction: initial;
             justify-content: center;
-    
+
             .hola {
                 font-size: 100px;
                 color: rgba(218, 211, 200, 0.973);
                 margin-top: 90px;
             }
         }
-    
+
         .second {
             display: flex;
             flex-direction: column;
@@ -1823,27 +1843,27 @@ form {
             width: 90%;
             align-items: center;
             margin-top: 10px;
-    
+
             .bienvenido {
                 display: flex;
                 flex-direction: column;
                 justify-items: left;
-    
+
                 h3 {
                     font-family: 'Prata', serif;
                     text-align: left;
                     font-size: 80%;
                 }
-    
+
                 p {
                     text-align: left;
                     font-size: 70%;
                 }
             }
-    
-    
+
+
             .carousel {
-    
+
                 display: flex;
                 flex-direction: row;
                 background: none;
@@ -1853,16 +1873,16 @@ form {
                 color: white;
                 font-weight: 200;
                 justify-content: center;
-    
-    
+
+
                 .deslizable {
-    
+
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 50vh;
-    
-    
+
+
                     &__item {
                         width: 40vh;
                         height: 35vh;
@@ -1873,47 +1893,49 @@ form {
                         align-items: center;
                         transition: all .2s;
                         flex-direction: column;
-    
+
                         img {
                             height: 100px;
                             width: 120px;
                             border: black solid 1px;
                             margin-top: 20px;
                         }
-    
+
                         h6 {
                             color: black;
                             height: 50px;
                             width: 38vh;
                             text-align: center;
                             font-size: 15px;
-                            margin:0;
+                            margin: 0;
                         }
-    
+
                         &:hover {
                             background: rgba(255, 255, 255, .5);
                             transform: scale(1.1);
                             cursor: pointer;
                         }
                     }
-    
+
                     .active {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                     }
-    
-    
+
+
                 }
 
-                .carousel-control-prev, .carousel-control-next {
-                    height: inherit;
+                .carousel-control-prev,
+                .carousel-control-next {
+                    height: 100vh;
+                    align-self: center;
                 }
-    
-    
+
+
             }
         }
-    
+
         .third {
             display: flex;
             flex-direction: column;
@@ -1921,41 +1943,41 @@ form {
             width: 50vh;
             justify-content: center;
             flex-shrink: 2;
-    
+
             .queHacemos {
                 display: flex;
                 flex-direction: column;
-    
+
                 h3 {
                     font-size: 25px;
                     font-family: 'Prata', serif;
                 }
-    
+
                 p {
                     font-size: 15px;
                 }
             }
-    
+
             .hacemosEsto {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 width: 100%;
-    
+
                 div {
                     width: 50vh;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
+
                     span {
                         font-size: 70px;
                     }
-    
+
                     h4 {
                         font-size: 20px;
                     }
-    
+
                     p {
                         width: 175px;
                         font-size: 18px;
@@ -1963,36 +1985,36 @@ form {
                 }
             }
         }
-    
+
         .fourth {
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 15%;
             margin: 20px 0 20px 0;
-    
+
             h3 {
                 font-size: 25px;
                 font-family: 'Prata', serif;
             }
-    
+
             p {
                 font-size: 18px;
             }
-    
+
             a {
                 color: black;
                 font-size: 20px;
                 transition: all 0.5s;
-    
+
                 &:hover {
                     font-size: 130%;
                 }
             }
-    
+
         }
     }
-    
+
 
     /* Productos */
 
@@ -2117,26 +2139,26 @@ form {
 
     /* Sobre mí */
 
-.containerSobreMi {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-
-    .foto {
-        height: 400px;
-        width: auto;
+    .containerSobreMi {
+        width: 300px;
         display: flex;
-    }
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
 
-    .sobreMi {
-        display: flex;
-        font-size: 70%;
-        text-align: center;
-        margin: 20px 0 20px 0;
+        .foto {
+            height: 400px;
+            width: auto;
+            display: flex;
+        }
+
+        .sobreMi {
+            display: flex;
+            font-size: 70%;
+            text-align: center;
+            margin: 20px 0 20px 0;
+        }
     }
-}
 
     /* Opiniones */
 
@@ -2145,43 +2167,46 @@ form {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
 
         h2 {
             font-size: 80%;
         }
-    
+
         .carousel {
             margin-top: 30px;
             display: flex;
-            align-items:center;
-    
+            align-items: center;
+
             .carousel-inner {
-    
+
                 .carousel-item {
                     width: 100%;
                     padding: 0;
                     align-items: center;
                     flex-direction: column;
                 }
-    
+
             }
-    
+
         }
-        
+
         .active {
             display: flex;
             flex-direction: column;
         }
-    
-    
+
+
         &__formulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 45vh;
 
-            label, input, div, textarea {
+            label,
+            input,
+            div,
+            textarea {
                 width: 45vh;
             }
 
@@ -2189,25 +2214,25 @@ form {
                 padding: 0;
             }
         }
-    
+
         &__titulo {
             text-align: center;
             color: #454500;
             display: flex;
             justify-content: center;
-    
+
             &--titulogrande {
                 font-family: 'Darker Grotesque', sans-serif;
                 text-decoration: underline;
                 font-size: 50px;
             }
-    
+
             &--titulochico {
                 font-family: 'Darker Grotesque', sans-serif;
             }
         }
     }
-    
+
     .caja {
         width: 50%;
         height: 165px;
@@ -2218,12 +2243,12 @@ form {
         background-color: rgba(252, 252, 252, 0.315);
         transition: all 1.5s;
         margin: 10px 0px 10px 0px;
-    
+
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
         }
-    
+
         .nombre {
             display: flex;
             position: absolute;
@@ -2231,7 +2256,7 @@ form {
             margin-bottom: 10px;
             font-size: 10px;
         }
-    
+
         .contenido {
             display: flex;
             justify-content: flex-end;
@@ -2239,7 +2264,7 @@ form {
             margin-top: 15px;
             padding-top: 20px;
         }
-    
+
     }
 
     .compraExitosa {
@@ -2254,39 +2279,7 @@ form {
 
 
 
-/* Contacto */
-.contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: 0;
 
-    p {
-        font-size: 70%;
-    }
-
-    .formContacto {
-        p {
-            width: auto;
-            font-size: 75%;
-        }
-
-        label {
-            width: auto;
-            font-size: 75%;
-        }
-
-        div {
-            width: auto;
-            font-size: 75%;
-        }
-
-        .detalles {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
 
 
 
