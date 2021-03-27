@@ -879,7 +879,7 @@ form {
       background-image: url(../img/comidaveggie1.jpg);
       font-family: 'Prata', serif;
       width: 100%;
-      height: 35vh;
+      height: 40vh;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
@@ -975,7 +975,7 @@ form {
         flex-wrap: wrap;
         width: 100%; }
         .index .third .hacemosEsto div {
-          width: 20%;
+          width: 30%;
           display: flex;
           flex-direction: column;
           align-items: center; }
@@ -990,7 +990,7 @@ form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 30vh; }
+      height: 40vh; }
       .index .fourth h3 {
         font-size: 25px;
         font-family: 'Prata', serif; }
