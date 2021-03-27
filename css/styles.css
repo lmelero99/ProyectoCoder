@@ -917,7 +917,7 @@ form {
           justify-content: space-between;
           width: 50vh; }
           .index .second .carousel .deslizable__item {
-            width: 40vh;
+            width: 70%;
             height: 35vh;
             margin: 0.5em;
             padding: .5em;
