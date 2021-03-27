@@ -957,7 +957,7 @@ form {
             align-items: center; }
     .index .third {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       height: 130vh;
       width: 50vh;
       justify-content: center; }
@@ -982,10 +982,10 @@ form {
           .index .third .hacemosEsto div span {
             font-size: 70px; }
           .index .third .hacemosEsto div h4 {
-            font-size: 20px; }
+            font-size: 18px; }
           .index .third .hacemosEsto div p {
             width: 175px;
-            font-size: 18px; }
+            font-size: 16px; }
     .index .fourth {
       display: flex;
       flex-direction: column;

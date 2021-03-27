@@ -1433,7 +1433,7 @@ form {
 
         .third {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             height: 130vh;
             width: 50vh;
             justify-content: center;
@@ -1469,12 +1469,12 @@ form {
                     }
 
                     h4 {
-                        font-size: 20px;
+                        font-size: 18px;
                     }
 
                     p {
                         width: 175px;
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
