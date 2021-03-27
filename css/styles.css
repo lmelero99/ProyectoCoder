@@ -1416,7 +1416,7 @@ form {
       display: flex;
       align-items: center; }
       .opiniones .carousel .carousel-inner .carousel-item {
-        width: 70%;
+        width: 100%;
         padding: 0;
         align-items: center;
         flex-direction: column; }
