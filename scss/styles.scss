@@ -1653,6 +1653,17 @@ form {
         }
     }
 
+    /* Contacto */
+    .contacto {
+        display: flex;
+        flex-direction: column;
+
+        .detalles {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
     /* Opiniones */
 
     .opiniones {
@@ -2273,17 +2284,6 @@ form {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

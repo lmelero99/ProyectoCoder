@@ -1098,6 +1098,13 @@ form {
       font-size: 70%;
       text-align: center;
       margin: 20px 0 20px 0; }
+  /* Contacto */
+  .contacto {
+    display: flex;
+    flex-direction: column; }
+    .contacto .detalles {
+      display: flex;
+      flex-direction: row; }
   /* Opiniones */
   .opiniones {
     display: flex;
