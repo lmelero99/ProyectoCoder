@@ -1662,8 +1662,9 @@ form {
 
                 .carousel-item {
                     width: 120%;
-                    padding: 0 350px 0 350px;
+                    padding: 0 10px 0 10px;
                     align-content: center;
+                    flex-direction: row;
                 }
 
             }
