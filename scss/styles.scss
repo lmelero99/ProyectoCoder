@@ -1688,7 +1688,10 @@ form {
             justify-content: center;
             width: 120vh;
 
-            label, input, textarea, div {
+            label,
+            input,
+            textarea,
+            div {
                 width: 100%;
             }
         }
@@ -1752,6 +1755,26 @@ form {
         justify-content: space-between;
         margin: 0;
         padding: 0;
+
+        .newsletter {
+            h4 {
+                font-size: 15px;
+            }
+
+            .formNewsletter {
+
+                label,
+                input {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .redesSociales {
+            ul {
+                font-size: 15px;
+            }
+        }
     }
 
 
