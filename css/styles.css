@@ -1073,7 +1073,6 @@ form {
   .containerSobreMi {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 50px; }
     .containerSobreMi img {
       width: 200px;
