@@ -253,7 +253,7 @@ form {
     justify-content: center; }
     .index .first .hola {
       font-size: 310px;
-      color: rgba(218, 211, 200, 0.9); }
+      color: #dad3c8; }
   .index .second {
     display: flex;
     flex-direction: row;
