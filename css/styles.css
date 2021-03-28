@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* -------------------------------- General ------------------------------------------ */
 * {
   padding: 0;
   margin: 0; }
@@ -10,6 +11,14 @@ body {
   display: flex;
   flex-direction: column;
   background-attachment: fixed; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding-top: 80px;
+  align-content: center;
+  align-items: center; }
 
 /* Barra de navegación */
 nav {
@@ -75,316 +84,6 @@ li,
 li,
 .boton :active {
   color: moccasin; }
-
-.section {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  padding-top: 80px;
-  align-content: center;
-  align-items: center; }
-
-.index {
-  display: flex;
-  flex-direction: column;
-  padding: 0; }
-  .index .first {
-    background-image: url(../img/comidaveggie1.jpg);
-    font-family: 'Prata', serif;
-    width: 1900px;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    opacity: 70%;
-    display: flex;
-    flex-direction: initial;
-    justify-content: center; }
-    .index .first .hola {
-      font-size: 310px;
-      color: rgba(218, 211, 200, 0.9); }
-  .index .second {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60vh;
-    width: 90%;
-    align-items: center;
-    margin-top: 50px; }
-    .index .second .bienvenido {
-      display: flex;
-      flex-direction: column;
-      justify-items: left;
-      font-size: 2rem; }
-      .index .second .bienvenido h3 {
-        font-family: 'Prata', serif;
-        text-align: left;
-        font-size: 3rem; }
-      .index .second .bienvenido p {
-        text-align: left;
-        font-size: 30px; }
-    .index .second .carousel {
-      display: flex;
-      flex-direction: row;
-      background: none;
-      width: 50vw;
-      height: 500px;
-      padding: 1em;
-      color: white;
-      font-weight: 200;
-      justify-content: center; }
-      .index .second .carousel .deslizable {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: auto; }
-        .index .second .carousel .deslizable__item {
-          width: 400px;
-          height: 500px;
-          margin: 0.5em;
-          padding: .5em;
-          background: rgba(255, 255, 255, 0.1);
-          display: flex;
-          align-items: center;
-          transition: all .2s;
-          flex-direction: column; }
-          .index .second .carousel .deslizable__item img {
-            height: 300px;
-            width: 320px;
-            border: black solid 1px;
-            margin-top: 20px; }
-          .index .second .carousel .deslizable__item h6 {
-            color: black;
-            height: 150px;
-            width: 300px;
-            text-align: center;
-            font-size: 20px; }
-          .index .second .carousel .deslizable__item:hover {
-            background: rgba(255, 255, 255, 0.5);
-            transform: scale(1.1);
-            cursor: pointer; }
-        .index .second .carousel .deslizable .active {
-          display: flex;
-          flex-direction: row; }
-  .index .third {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    width: 100%;
-    justify-content: space-between; }
-    .index .third .queHacemos {
-      display: flex;
-      flex-direction: column; }
-      .index .third .queHacemos h3 {
-        font-size: 3rem;
-        font-family: 'Prata', serif; }
-      .index .third .queHacemos p {
-        font-size: 1.5rem; }
-    .index .third .hacemosEsto {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%; }
-      .index .third .hacemosEsto div {
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .index .third .hacemosEsto div span {
-          font-size: 100px; }
-        .index .third .hacemosEsto div h4 {
-          font-size: 30px; }
-        .index .third .hacemosEsto div p {
-          width: 175px;
-          font-size: 18px; }
-  .index .fourth {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px; }
-    .index .fourth h3 {
-      font-size: 3rem;
-      font-family: 'Prata', serif; }
-    .index .fourth p {
-      font-size: 35px; }
-    .index .fourth a {
-      color: black;
-      font-size: 20px;
-      transition: all 0.5s; }
-      .index .fourth a:hover {
-        font-size: 175%; }
-
-/* Productos */
-.market {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  justify-content: center;
-  padding: 0 200px 0 200px;
-  margin-bottom: 50px; }
-  .market .carousel {
-    display: flex;
-    justify-content: center;
-    width: 100vh; }
-    .market .carousel .carousel-inner {
-      width: 100vh; }
-      .market .carousel .carousel-inner .carousel-item {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vh; }
-  .market .active {
-    display: flex;
-    flex-direction: row; }
-
-.bloque {
-  background-color: #E4FFC8;
-  border: 1px solid green;
-  height: 435px;
-  width: 300px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 2s; }
-  .bloque .bloqueFoto {
-    width: 297px;
-    height: 200px;
-    transition: all 2s;
-    display: flex; }
-    .bloque .bloqueFoto .card-img-top {
-      width: 297px;
-      height: auto; }
-    .bloque .bloqueFoto:hover {
-      transform: scale(1.5, 1.5);
-      cursor: pointer;
-      z-index: 2; }
-  .bloque .card-body {
-    width: 300px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: static; }
-    .bloque .card-body .card-text {
-      font-size: 17px; }
-    .bloque .card-body .comprarProd {
-      display: flex;
-      width: 100px;
-      justify-content: center; }
-      .bloque .card-body .comprarProd input {
-        display: flex;
-        border: none;
-        background: lightgoldenrodyellow;
-        margin: 0; }
-    .bloque .card-body .comprarProd :hover {
-      text-decoration: underline; }
-
-/* Productos - Modal */
-.modal-content {
-  background-color: #f5f186;
-  background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%); }
-  .modal-content .modal-header .modal-title {
-    color: black; }
-  .modal-content .formComprar .metodoPago {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline; }
-    .modal-content .formComprar .metodoPago__check {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      .modal-content .formComprar .metodoPago__check--label {
-        margin: 0;
-        padding: 0; }
-
-/* Sobre mí */
-.containerSobreMi {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 50px; }
-  .containerSobreMi img {
-    width: 500px;
-    height: 600px;
-    border: solid 1px black; }
-  .containerSobreMi .sobreMi {
-    font-size: 30px;
-    align-self: center;
-    text-align: justify; }
-
-/* Contacto */
-.contacto {
-  height: auto;
-  display: flex;
-  flex-direction: column; }
-  .contacto .detalles {
-    display: flex;
-    flex-direction: row; }
-
-/* Sección Opiniones */
-.opiniones {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-  .opiniones .carousel {
-    width: 100%;
-    margin-top: 30px; }
-    .opiniones .carousel .carousel-inner {
-      width: 100%;
-      display: flex; }
-      .opiniones .carousel .carousel-inner .carousel-item {
-        width: 120%;
-        padding: 0 350px 0 350px;
-        align-content: center; }
-  .opiniones .active {
-    display: flex;
-    flex-direction: row; }
-  .opiniones__formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 120vh; }
-  .opiniones__titulo {
-    text-align: center;
-    color: #454500;
-    display: flex;
-    justify-content: center; }
-    .opiniones__titulo--titulogrande {
-      font-family: 'Darker Grotesque', sans-serif;
-      text-decoration: underline;
-      font-size: 50px; }
-    .opiniones__titulo--titulochico {
-      font-family: 'Darker Grotesque', sans-serif; }
-
-.caja {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px 0 20px;
-  background-color: rgba(252, 252, 252, 0.315);
-  transition: all 1.5s;
-  margin: 0 5px 0 5px; }
-  .caja:hover {
-    transform: scale(1.1);
-    cursor: pointer; }
-  .caja .nombre {
-    display: flex;
-    position: absolute;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    font-size: 18px; }
-  .caja .contenido {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 25px;
-    margin-top: 30px;
-    padding-top: 20px; }
 
 /* Footer */
 footer {
@@ -531,13 +230,317 @@ form {
     align-self: flex-end;
     margin-bottom: 10px; }
 
-/* ----------------Responsive - Media Queries----------------- */
+/* ---------------- Página principal --------------*/
+.index {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /* Primer bloque */
+  /* Segundo bloque */
+  /* Tercer bloque */
+  /* Cuarto bloque */ }
+  .index .first {
+    background-image: url(../img/comidaveggie1.jpg);
+    font-family: 'Prata', serif;
+    width: 1900px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 70%;
+    display: flex;
+    flex-direction: initial;
+    justify-content: center; }
+    .index .first .hola {
+      font-size: 310px;
+      color: rgba(218, 211, 200, 0.9); }
+  .index .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60vh;
+    width: 90%;
+    align-items: center;
+    margin-top: 50px; }
+    .index .second .bienvenido {
+      display: flex;
+      flex-direction: column;
+      justify-items: left;
+      font-size: 2rem; }
+      .index .second .bienvenido h3 {
+        font-family: 'Prata', serif;
+        text-align: left;
+        font-size: 3rem; }
+      .index .second .bienvenido p {
+        text-align: left;
+        font-size: 30px; }
+    .index .second .carousel {
+      display: flex;
+      flex-direction: row;
+      background: none;
+      width: 50vw;
+      height: 500px;
+      padding: 1em;
+      color: white;
+      font-weight: 200;
+      justify-content: center; }
+      .index .second .carousel .deslizable {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto; }
+        .index .second .carousel .deslizable__item {
+          width: 400px;
+          height: 500px;
+          margin: 0.5em;
+          padding: .5em;
+          background: rgba(255, 255, 255, 0.1);
+          display: flex;
+          align-items: center;
+          transition: all .2s;
+          flex-direction: column; }
+          .index .second .carousel .deslizable__item img {
+            height: 300px;
+            width: 320px;
+            border: black solid 1px;
+            margin-top: 20px; }
+          .index .second .carousel .deslizable__item h6 {
+            color: black;
+            height: 150px;
+            width: 300px;
+            text-align: center;
+            font-size: 20px; }
+          .index .second .carousel .deslizable__item:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+            cursor: pointer; }
+        .index .second .carousel .deslizable .active {
+          display: flex;
+          flex-direction: row; }
+  .index .third {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: space-between; }
+    .index .third .queHacemos {
+      display: flex;
+      flex-direction: column; }
+      .index .third .queHacemos h3 {
+        font-size: 3rem;
+        font-family: 'Prata', serif; }
+      .index .third .queHacemos p {
+        font-size: 1.5rem; }
+    .index .third .hacemosEsto {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%; }
+      .index .third .hacemosEsto div {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .index .third .hacemosEsto div span {
+          font-size: 100px; }
+        .index .third .hacemosEsto div h4 {
+          font-size: 30px; }
+        .index .third .hacemosEsto div p {
+          width: 175px;
+          font-size: 18px; }
+  .index .fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px; }
+    .index .fourth h3 {
+      font-size: 3rem;
+      font-family: 'Prata', serif; }
+    .index .fourth p {
+      font-size: 35px; }
+    .index .fourth a {
+      color: black;
+      font-size: 20px;
+      transition: all 0.5s; }
+      .index .fourth a:hover {
+        font-size: 175%; }
+
+/*----------------- Productos -------------------- */
+/* Carousel */
+.market {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  padding: 0 200px 0 200px;
+  margin-bottom: 50px; }
+  .market .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100vh; }
+    .market .carousel .carousel-inner {
+      width: 100vh; }
+      .market .carousel .carousel-inner .carousel-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vh; }
+  .market .active {
+    display: flex;
+    flex-direction: row; }
+
+/* Items */
+.bloque {
+  background-color: #E4FFC8;
+  border: 1px solid green;
+  height: 435px;
+  width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s; }
+  .bloque .bloqueFoto {
+    width: 297px;
+    height: 200px;
+    transition: all 2s;
+    display: flex; }
+    .bloque .bloqueFoto .card-img-top {
+      width: 297px;
+      height: auto; }
+    .bloque .bloqueFoto:hover {
+      transform: scale(1.5, 1.5);
+      cursor: pointer;
+      z-index: 2; }
+  .bloque .card-body {
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static; }
+    .bloque .card-body .card-text {
+      font-size: 17px; }
+    .bloque .card-body .comprarProd {
+      display: flex;
+      width: 100px;
+      justify-content: center; }
+      .bloque .card-body .comprarProd input {
+        display: flex;
+        border: none;
+        background: lightgoldenrodyellow;
+        margin: 0; }
+    .bloque .card-body .comprarProd :hover {
+      text-decoration: underline; }
+
+/* Productos - Modal */
+.modal-content {
+  background-color: #f5f186;
+  background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%); }
+  .modal-content .modal-header .modal-title {
+    color: black; }
+  .modal-content .formComprar .metodoPago {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline; }
+    .modal-content .formComprar .metodoPago__check {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; }
+      .modal-content .formComprar .metodoPago__check--label {
+        margin: 0;
+        padding: 0; }
+
+/* ----------------- Sobre mí ------------------- */
+.containerSobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+  .containerSobreMi img {
+    width: 500px;
+    height: 600px;
+    border: solid 1px black; }
+  .containerSobreMi .sobreMi {
+    font-size: 30px;
+    align-self: center;
+    text-align: justify; }
+
+/* ---------------- Contacto ----------------- */
+.contacto {
+  height: auto;
+  display: flex;
+  flex-direction: column; }
+  .contacto .detalles {
+    display: flex;
+    flex-direction: row; }
+
+/* ------------------- Sección Opiniones ---------------------- */
+.opiniones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Caja de opiniones */
+  /* Items */ }
+  .opiniones .carousel {
+    width: 100%;
+    margin-top: 30px; }
+    .opiniones .carousel .carousel-inner {
+      width: 100%;
+      display: flex; }
+      .opiniones .carousel .carousel-inner .carousel-item {
+        width: 120%;
+        padding: 0 350px 0 350px;
+        align-content: center; }
+  .opiniones .active {
+    display: flex;
+    flex-direction: row; }
+  .opiniones .caja {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background-color: rgba(252, 252, 252, 0.315);
+    transition: all 1.5s;
+    margin: 0 5px 0 5px;
+    /* Formulario */ }
+    .opiniones .caja:hover {
+      transform: scale(1.1);
+      cursor: pointer; }
+    .opiniones .caja .nombre {
+      display: flex;
+      position: absolute;
+      padding-top: 20px;
+      margin-bottom: 10px;
+      font-size: 18px; }
+    .opiniones .caja .contenido {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 25px;
+      margin-top: 30px;
+      padding-top: 20px; }
+    .opiniones .caja__formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%; }
+      .opiniones .caja__formulario label,
+      .opiniones .caja__formulario input,
+      .opiniones .caja__formulario div {
+        width: 70%; }
+
+/* ---------------- Responsive - Media Queries ----------------- */
+/* ----------- Pantallas algo grandes -------------- */
 @media (max-width: 992px) {
   /* General */
   * {
     margin: 0;
     padding: 0; }
-  /* General */
   h2 {
     font-size: 30px; }
   nav {
@@ -551,10 +554,15 @@ form {
         font-size: 20px; }
       nav ul li ul {
         width: 20%; }
+  /* ----- Página principal ------*/
   .index {
     display: flex;
     flex-direction: column;
-    padding: 0; }
+    padding: 0;
+    /* Primer bloque */
+    /* Segundo bloque */
+    /* Tercer bloque */
+    /* Cuarto bloque */ }
     .index .first {
       background-image: url(../img/comidaveggie1.jpg);
       font-family: 'Prata', serif;
@@ -682,13 +690,14 @@ form {
         transition: all 0.5s; }
         .index .fourth a:hover {
           font-size: 130%; }
-  /* Productos */
+  /* ----- Productos ----- */
   #tituloproductos,
   #viandas,
   #hamburguesas,
   #snacks,
   #platosdulces {
     font-size: 80%; }
+  /* Carousel */
   .market {
     display: flex;
     flex-direction: column;
@@ -712,6 +721,7 @@ form {
     .market .active {
       display: flex;
       flex-direction: column; }
+  /* Items */
   .bloque {
     background-color: #E4FFC8;
     border: 1px solid green;
@@ -762,7 +772,7 @@ form {
           font-size: 10px; }
       .bloque .card-body .comprarProd :hover {
         text-decoration: underline; }
-  /* Sobre mí */
+  /* ------ Sobre mí --------- */
   .containerSobreMi {
     width: 300px;
     display: flex;
@@ -778,13 +788,16 @@ form {
       font-size: 70%;
       text-align: center;
       margin: 20px 0 20px 0; }
-  /* Opiniones */
+  /* -------- Opiniones -------- */
   .opiniones {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60vh;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    /* Caja de opiniones */
+    /* Items */
+    /* Formulario para opinar */ }
     .opiniones h2 {
       font-size: 80%; }
     .opiniones .carousel {
@@ -799,6 +812,31 @@ form {
     .opiniones .active {
       display: flex;
       flex-direction: column; }
+    .opiniones .caja {
+      width: 30vh;
+      height: 165px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px 0 20px;
+      background-color: rgba(252, 252, 252, 0.315);
+      transition: all 1.5s;
+      margin: 10px 0px 10px 0px; }
+      .opiniones .caja:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+      .opiniones .caja .nombre {
+        display: flex;
+        position: absolute;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px; }
+      .opiniones .caja .contenido {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 12px;
+        margin-top: 15px;
+        padding-top: 20px; }
     .opiniones__formulario {
       display: flex;
       flex-direction: column;
@@ -810,51 +848,17 @@ form {
       .opiniones__formulario textarea {
         width: 60vh; }
       .opiniones__formulario .acciones {
-        padding: 0; }
-    .opiniones__titulo {
-      text-align: center;
-      color: #454500;
-      display: flex;
-      justify-content: center; }
-      .opiniones__titulo--titulogrande {
-        font-family: 'Darker Grotesque', sans-serif;
-        text-decoration: underline;
-        font-size: 50px; }
-      .opiniones__titulo--titulochico {
-        font-family: 'Darker Grotesque', sans-serif; }
-  .caja {
-    width: 30vh;
-    height: 165px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px 0 20px;
-    background-color: rgba(252, 252, 252, 0.315);
-    transition: all 1.5s;
-    margin: 10px 0px 10px 0px; }
-    .caja:hover {
-      transform: scale(1.1);
-      cursor: pointer; }
-    .caja .nombre {
-      display: flex;
-      position: absolute;
-      padding-top: 10px;
-      margin-bottom: 10px;
-      font-size: 10px; }
-    .caja .contenido {
-      display: flex;
-      justify-content: flex-end;
-      font-size: 12px;
-      margin-top: 15px;
-      padding-top: 20px; } }
+        padding: 0; } }
 
+/* ------------- Tablets (o smartphones en horizontal) ------------- */
 @media (max-width: 768px) {
+  /* General */
   * {
     margin: 0;
     padding: 0; }
-  /* General */
   h2 {
     font-size: 30px; }
+  /* Menú de navegación */
   nav {
     width: 100%;
     display: flex;
@@ -872,10 +876,31 @@ form {
         nav ul li ul li {
           background-color: seagreen;
           height: 40px; }
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; }
+    .footer .newsletter h4 {
+      font-size: 15px; }
+    .footer .newsletter .formNewsletter label,
+    .footer .newsletter .formNewsletter input {
+      font-size: 15px; }
+    .footer .redesSociales ul {
+      font-size: 15px; }
+      .footer .redesSociales ul a {
+        font-size: 15px; }
+  /* -------- Página principal -------- */
   .index {
     display: flex;
     flex-direction: column;
-    padding: 0; }
+    padding: 0;
+    /* Primer bloque */
+    /* Segundo bloque */
+    /* Tercer bloque */
+    /* Cuarto bloque */ }
     .index .first {
       background-image: url(../img/comidaveggie1.jpg);
       font-family: 'Prata', serif;
@@ -1004,7 +1029,7 @@ form {
         transition: all 0.5s; }
         .index .fourth a:hover {
           font-size: 130%; }
-  /* Productos */
+  /*------- Productos------- */
   .market {
     display: flex;
     flex-direction: row;
@@ -1012,7 +1037,8 @@ form {
     flex: 1;
     justify-content: center;
     padding: 0 70px 0 70px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    /* Carousel */ }
     .market .carousel {
       display: flex;
       justify-content: center;
@@ -1028,6 +1054,7 @@ form {
     .market .active {
       display: flex;
       flex-direction: row; }
+  /* Items */
   .bloque {
     background-color: #E4FFC8;
     border: 1px solid green;
@@ -1095,7 +1122,10 @@ form {
   .opiniones {
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    /* Caja de opiniones */
+    /* Items */
+    /* Formulario para opinar */ }
     .opiniones .carousel {
       width: 100%;
       margin-top: 30px; }
@@ -1114,6 +1144,30 @@ form {
     .opiniones .active {
       display: flex;
       flex-direction: row; }
+    .opiniones .caja {
+      width: 150px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(252, 252, 252, 0.315);
+      transition: all 1.5s;
+      margin: 0 15px 0 15px; }
+      .opiniones .caja:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+      .opiniones .caja .nombre {
+        display: flex;
+        position: absolute;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 10px; }
+      .opiniones .caja .contenido {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 11px;
+        margin-top: 30px;
+        padding-top: 20px; }
     .opiniones__formulario {
       display: flex;
       flex-direction: column;
@@ -1123,66 +1177,17 @@ form {
       .opiniones__formulario input,
       .opiniones__formulario textarea,
       .opiniones__formulario div {
-        width: 100%; }
-    .opiniones__titulo {
-      text-align: center;
-      color: #454500;
-      display: flex;
-      justify-content: center; }
-      .opiniones__titulo--titulogrande {
-        font-family: 'Darker Grotesque', sans-serif;
-        text-decoration: underline;
-        font-size: 50px; }
-      .opiniones__titulo--titulochico {
-        font-family: 'Darker Grotesque', sans-serif; }
-  .caja {
-    width: 150px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(252, 252, 252, 0.315);
-    transition: all 1.5s;
-    margin: 0 15px 0 15px; }
-    .caja:hover {
-      transform: scale(1.1);
-      cursor: pointer; }
-    .caja .nombre {
-      display: flex;
-      position: absolute;
-      padding-top: 20px;
-      margin-bottom: 10px;
-      font-size: 10px; }
-    .caja .contenido {
-      display: flex;
-      justify-content: flex-end;
-      font-size: 11px;
-      margin-top: 30px;
-      padding-top: 20px; }
-  /* Footer */
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0; }
-    .footer .newsletter h4 {
-      font-size: 15px; }
-    .footer .newsletter .formNewsletter label,
-    .footer .newsletter .formNewsletter input {
-      font-size: 15px; }
-    .footer .redesSociales ul {
-      font-size: 15px; }
-      .footer .redesSociales ul a {
-        font-size: 15px; } }
+        width: 100%; } }
 
+/* --------------- Smartphones ---------------*/
 @media (max-width: 576px) {
+  /* General */
   * {
     margin: 0;
     padding: 0; }
-  /* General */
   h2 {
     font-size: 30px; }
+  /* Menú de navegación */
   nav {
     width: 100%;
     display: flex;
@@ -1200,10 +1205,15 @@ form {
         nav ul li ul:hover {
           display: block;
           padding-top: 40px; }
+  /*----------- Página principal------------ */
   .index {
     display: flex;
     flex-direction: column;
-    padding: 0; }
+    padding: 0;
+    /* Primer bloque */
+    /* Segundo bloque */
+    /* Tercer bloque */
+    /* Cuarto bloque */ }
     .index .first {
       background-image: url(../img/comidaveggie1.jpg);
       font-family: 'Prata', serif;
@@ -1337,7 +1347,7 @@ form {
         transition: all 0.5s; }
         .index .fourth a:hover {
           font-size: 130%; }
-  /* Productos */
+  /* ----------Productos------------ */
   #tituloproductos,
   #viandas,
   #hamburguesas,
@@ -1351,7 +1361,8 @@ form {
     flex: 1;
     justify-content: center;
     margin-bottom: 50px;
-    padding: 0 50px 0 50px; }
+    padding: 0 50px 0 50px;
+    /* Carousel */ }
     .market .carousel {
       display: flex;
       justify-content: center;
@@ -1367,6 +1378,7 @@ form {
     .market .active {
       display: flex;
       flex-direction: column; }
+  /* Items */
   .bloque {
     background-color: #E4FFC8;
     border: 1px solid green;
@@ -1417,7 +1429,7 @@ form {
           font-size: 10px; }
       .bloque .card-body .comprarProd :hover {
         text-decoration: underline; }
-  /* Sobre mí */
+  /*----------- Sobre mí --------------*/
   .containerSobreMi {
     width: 300px;
     display: flex;
@@ -1433,7 +1445,7 @@ form {
       font-size: 70%;
       text-align: center;
       margin: 20px 0 20px 0; }
-  /* Contacto */
+  /*----------- Contacto ------------*/
   .contacto {
     z-index: 2; }
     .contacto p,
@@ -1446,13 +1458,16 @@ form {
       display: flex;
       flex-direction: column;
       width: 100%; }
-  /* Opiniones */
+  /*------------- Opiniones------------ */
   .opiniones {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    /* Caja de opiniones */
+    /* Items */
+    /* Formulario para opinar */ }
     .opiniones h2 {
       font-size: 80%; }
     .opiniones .carousel {
@@ -1467,6 +1482,34 @@ form {
     .opiniones .active {
       display: flex;
       flex-direction: column; }
+    .opiniones .caja {
+      width: 50%;
+      height: 165px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      background-color: rgba(252, 252, 252, 0.315);
+      transition: all 1.5s;
+      margin: 10px 0px 10px 0px; }
+      .opiniones .caja:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+      .opiniones .caja .nombre {
+        display: flex;
+        position: absolute;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px; }
+      .opiniones .caja .contenido {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        margin-top: 15px;
+        padding-top: 20px; }
+    .opiniones .compraExitosa {
+      margin: 0;
+      padding: 0; }
     .opiniones__formulario {
       display: flex;
       flex-direction: column;
@@ -1478,46 +1521,7 @@ form {
       .opiniones__formulario textarea {
         width: 45vh; }
       .opiniones__formulario .acciones {
-        padding: 0; }
-    .opiniones__titulo {
-      text-align: center;
-      color: #454500;
-      display: flex;
-      justify-content: center; }
-      .opiniones__titulo--titulogrande {
-        font-family: 'Darker Grotesque', sans-serif;
-        text-decoration: underline;
-        font-size: 50px; }
-      .opiniones__titulo--titulochico {
-        font-family: 'Darker Grotesque', sans-serif; }
-  .caja {
-    width: 50%;
-    height: 165px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    background-color: rgba(252, 252, 252, 0.315);
-    transition: all 1.5s;
-    margin: 10px 0px 10px 0px; }
-    .caja:hover {
-      transform: scale(1.1);
-      cursor: pointer; }
-    .caja .nombre {
-      display: flex;
-      position: absolute;
-      padding-top: 10px;
-      margin-bottom: 10px;
-      font-size: 10px; }
-    .caja .contenido {
-      display: flex;
-      justify-content: flex-end;
-      font-size: 10px;
-      margin-top: 15px;
-      padding-top: 20px; }
-  .compraExitosa {
-    margin: 0;
-    padding: 0; } }
+        padding: 0; } }
 
 /*-------------- Keyframes ---------------*/
 /* Compra Exitosa */

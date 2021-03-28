@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Encabezado-->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +20,9 @@
 </head>
 
 <body>
+
+  <!--Menú de navegación-->
+
   <nav class="nav row-md-12 row-sm-6">
     <ul>
       <li class="logo"><img src="../img/logo.ico" class="logo" /></li>
@@ -35,89 +40,99 @@
       <li class="boton"><a href="opiniones.html">Opiniones</a></li>
     </ul>
   </nav>
+
+  <!--Cuerpo de la página-->
+
   <section class="section">
     <div class="opiniones wow animate__animated animate__fadeInUp">
       <h2 class="opiniones__titulo opiniones__titulo--titulogrande wow animate__animated animate__fadeInUp">Opiniones de
         clientes</h2>
-          <div id="carouselopiniones" class="carousel wow animate__animated animate__fadeInUp" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="caja">
-                  <h6 class="nombre">Carina</h6>
-                  <p class="contenido">"Me encantó la comida, empecé comprando porque no me dan
-                    los tiempos por mi trabajo y fue la mejor decisión, hasta estoy mas sana!!"</p>
-                </div>
-                <div class="caja">
-                  <h6 class="nombre">Agustina</h6>
-                  <p class="contenido">"Ya elegí mis viandas fijas para toda la semana, gracias
-                    Sil."</p>
-                </div>
-                <div class="caja">
-                  <h6 class="nombre">Marina</h6>
-                  <p class="contenido">"Empecé a querer comer más saludable y esta es la mejor
-                    opción, realmente la recomiendo mucho"</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="caja">
-                  <h6 class="nombre">Florencia</h6>
-                  <p class="contenido">"Le recomendé SilVegan a todos mis amigos y me empecé a
-                    interesar más por la comida veggie por vos, gracias!!"</p>
-                </div>
-                <div class="caja">
-                  <h6 class="nombre">Yamila</h6>
-                  <p class="contenido">"Me costaba mucho comer ya que no tengo mucho tiempo
-                    para cocinar y soy alérgica a la carne. Cambié totalmente mis hábitos, gracias!"</p>
-                </div>
-                <div class="caja">
-                  <h6 class="nombre">Mercedes</h6>
-                  <p class="contenido">"Mis hijas son vegetarianas y gracias a Sil pude hacer
-                    que coman sano y variado, realmente es para recomendar."</p>
-                </div>
-              </div>
+
+      <!--Caja de opiniones-->
+
+      <div id="carouselopiniones" class="carousel wow animate__animated animate__fadeInUp" data-ride="carousel"
+        data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="caja">
+              <h6 class="nombre">Carina</h6>
+              <p class="contenido">"Me encantó la comida, empecé comprando porque no me dan
+                los tiempos por mi trabajo y fue la mejor decisión, hasta estoy mas sana!!"</p>
             </div>
-
-
-            <a class="carousel-control-prev" href="#carouselopiniones" data-slide="prev">
-              <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
-                  width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <line x1="5" y1="12" x2="9" y2="16" />
-                  <line x1="5" y1="12" x2="9" y2="8" />
-                </svg></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselopiniones" data-slide="next">
-              <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                  width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <line x1="15" y1="16" x2="19" y2="12" />
-                  <line x1="15" y1="8" x2="19" y2="12" />
-                </svg></span>
-            </a>
-          </div>
-
-        <form class="row-sm-12 align-self-md-center">
-          <div class="row opiniones__formulario form-group wow animate__animated animate__fadeInUp">
-            <h3 class="opiniones__titulo opiniones__titulo--titulochico wow animate__animated animate__fadeInUp">
-              Formulario
-              de opinión</h3>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Juan Perez" class="form-control" />
-            <div class="comentarios">Comentarios:
-              <textarea rows="10" cols="50" placeholder="Inserte su comentario aquí..." class="form-control"></textarea>
+            <div class="caja">
+              <h6 class="nombre">Agustina</h6>
+              <p class="contenido">"Ya elegí mis viandas fijas para toda la semana, gracias
+                Sil."</p>
             </div>
-            <div class="acciones">
-              <input type="reset" value="Limpiar campos" class="btn btn-default" />
-              <input type="submit" value="Enviar" class="btn btn-default" />
+            <div class="caja">
+              <h6 class="nombre">Marina</h6>
+              <p class="contenido">"Empecé a querer comer más saludable y esta es la mejor
+                opción, realmente la recomiendo mucho"</p>
             </div>
           </div>
-        </form>
+          <div class="carousel-item">
+            <div class="caja">
+              <h6 class="nombre">Florencia</h6>
+              <p class="contenido">"Le recomendé SilVegan a todos mis amigos y me empecé a
+                interesar más por la comida veggie por vos, gracias!!"</p>
+            </div>
+            <div class="caja">
+              <h6 class="nombre">Yamila</h6>
+              <p class="contenido">"Me costaba mucho comer ya que no tengo mucho tiempo
+                para cocinar y soy alérgica a la carne. Cambié totalmente mis hábitos, gracias!"</p>
+            </div>
+            <div class="caja">
+              <h6 class="nombre">Mercedes</h6>
+              <p class="contenido">"Mis hijas son vegetarianas y gracias a Sil pude hacer
+                que coman sano y variado, realmente es para recomendar."</p>
+            </div>
+          </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#carouselopiniones" data-slide="prev">
+          <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
+              width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="5" y1="12" x2="9" y2="16" />
+              <line x1="5" y1="12" x2="9" y2="8" />
+            </svg></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselopiniones" data-slide="next">
+          <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
+              width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="15" y1="16" x2="19" y2="12" />
+              <line x1="15" y1="8" x2="19" y2="12" />
+            </svg></span>
+        </a>
       </div>
+
+      <!--Formulario para opinar-->
+
+      <form class="opiniones__formulario form-group wow animate__animated animate__fadeInUp container">
+          <h3 class="opiniones__titulo opiniones__titulo--titulochico wow animate__animated animate__fadeInUp">
+            Formulario
+            de opinión</h3>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Juan Perez" class="form-control" />
+          <div class="comentarios">Comentarios:
+            <textarea rows="10" cols="50" placeholder="Inserte su comentario aquí..." class="form-control"></textarea>
+          </div>
+          <div class="acciones">
+            <input type="reset" value="Limpiar campos" class="btn btn-default" />
+            <input type="submit" value="Enviar" class="btn btn-default" />
+          </div>
+      </form>
+    </div>
   </section>
+
+  <!--Footer-->
+
   <footer>
     <div class="footer">
       <div class="newsletter col">
@@ -166,6 +181,9 @@
       </div>
     </div>
   </footer>
+
+  <!--Scripts-->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
