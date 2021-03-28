@@ -1771,8 +1771,15 @@ form {
         }
 
         .redesSociales {
+            display: flex;
+            flex-grow: 3;
+
             ul {
                 font-size: 15px;
+
+                a {
+                    font-size: 15px;
+                }
             }
         }
     }

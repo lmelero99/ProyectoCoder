@@ -1170,8 +1170,13 @@ form {
     .footer .newsletter .formNewsletter label,
     .footer .newsletter .formNewsletter input {
       font-size: 15px; }
-    .footer .redesSociales ul {
-      font-size: 15px; } }
+    .footer .redesSociales {
+      display: flex;
+      flex-grow: 3; }
+      .footer .redesSociales ul {
+        font-size: 15px; }
+        .footer .redesSociales ul a {
+          font-size: 15px; } }
 
 @media (max-width: 576px) {
   * {
