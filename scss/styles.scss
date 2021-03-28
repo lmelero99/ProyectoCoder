@@ -1617,24 +1617,23 @@ form {
     /* Sobre mí */
 
     .containerSobreMi {
-        width: 300px;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0;
-
-        .foto {
-            height: 400px;
-            width: auto;
-            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    
+        img {
+            width: 500px;
+            height: 600px;
+            border: solid 1px black;
         }
-
+    
         .sobreMi {
-            display: flex;
-            font-size: 70%;
-            text-align: center;
-            margin: 20px 0 20px 0;
+            font-size: 30px;
+            align-self: center;
+            text-align: justify;
         }
+    
     }
 
     /* Contacto */
