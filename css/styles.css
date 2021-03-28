@@ -1076,11 +1076,11 @@ form {
     justify-content: space-between;
     margin-bottom: 50px; }
     .containerSobreMi img {
-      width: 500px;
-      height: 600px;
+      width: 200px;
+      height: 300px;
       border: solid 1px black; }
     .containerSobreMi .sobreMi {
-      font-size: 30px;
+      font-size: 15px;
       align-self: center;
       text-align: justify; }
   /* Contacto */
