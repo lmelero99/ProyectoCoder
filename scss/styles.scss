@@ -1686,6 +1686,10 @@ form {
             flex-direction: column;
             justify-content: center;
             width: 120vh;
+
+            label, input, textarea, div {
+                width: 100%;
+            }
         }
 
         &__titulo {
