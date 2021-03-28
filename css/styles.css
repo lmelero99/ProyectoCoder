@@ -1029,8 +1029,8 @@ form {
   .bloque {
     background-color: #E4FFC8;
     border: 1px solid green;
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -1038,12 +1038,12 @@ form {
     justify-content: center;
     transition: all 2s; }
     .bloque .bloqueFoto {
-      width: 247px;
-      height: 175px;
+      width: 197px;
+      height: 105px;
       transition: all 2s;
       display: flex; }
       .bloque .bloqueFoto .card-img-top {
-        width: 247px;
+        width: 197px;
         height: auto; }
       .bloque .bloqueFoto:hover {
         transform: scale(1.5, 1.5);
