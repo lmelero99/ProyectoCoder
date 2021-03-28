@@ -1620,19 +1620,19 @@ form {
         display: flex;
         flex-direction: row;
         margin-bottom: 50px;
-    
+
         img {
             width: 200px;
             height: 300px;
             border: solid 1px black;
         }
-    
+
         .sobreMi {
             font-size: 15px;
             align-self: center;
             text-align: justify;
         }
-    
+
     }
 
     /* Contacto */
@@ -1646,31 +1646,24 @@ form {
         }
     }
 
-    /* Opiniones */
-
+    /* Sección Opiniones */
     .opiniones {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 60vh;
-        flex-wrap: wrap;
-
-        h2 {
-            font-size: 80%;
-        }
+        width: 100%;
 
         .carousel {
+            width: 100%;
             margin-top: 30px;
-            display: flex;
-            align-items: center;
 
             .carousel-inner {
+                width: 100%;
+                display: flex;
 
                 .carousel-item {
-                    width: 60vh;
-                    padding: 0;
-                    align-items: center;
-                    flex-direction: column;
+                    width: 120%;
+                    padding: 0 350px 0 350px;
+                    align-content: center;
                 }
 
             }
@@ -1679,7 +1672,7 @@ form {
 
         .active {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
 
 
@@ -1687,18 +1680,7 @@ form {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 60vh;
-
-            label,
-            input,
-            div,
-            textarea {
-                width: 60vh;
-            }
-
-            .acciones {
-                padding: 0;
-            }
+            width: 120vh;
         }
 
         &__titulo {
@@ -1720,15 +1702,14 @@ form {
     }
 
     .caja {
-        width: 30vh;
-        height: 165px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 20px 0 20px;
         background-color: rgba(252, 252, 252, 0.315);
         transition: all 1.5s;
-        margin: 10px 0px 10px 0px;
+        margin: 0 5px 0 5px;
 
         &:hover {
             transform: scale(1.1);
@@ -1738,16 +1719,16 @@ form {
         .nombre {
             display: flex;
             position: absolute;
-            padding-top: 10px;
+            padding-top: 20px;
             margin-bottom: 10px;
-            font-size: 10px;
+            font-size: 18px;
         }
 
         .contenido {
             display: flex;
             justify-content: flex-end;
-            font-size: 12px;
-            margin-top: 15px;
+            font-size: 25px;
+            margin-top: 30px;
             padding-top: 20px;
         }
 

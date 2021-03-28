@@ -1089,39 +1089,29 @@ form {
     .contacto .detalles {
       display: flex;
       flex-direction: column; }
-  /* Opiniones */
+  /* Sección Opiniones */
   .opiniones {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60vh;
-    flex-wrap: wrap; }
-    .opiniones h2 {
-      font-size: 80%; }
+    width: 100%; }
     .opiniones .carousel {
-      margin-top: 30px;
-      display: flex;
-      align-items: center; }
-      .opiniones .carousel .carousel-inner .carousel-item {
-        width: 60vh;
-        padding: 0;
-        align-items: center;
-        flex-direction: column; }
+      width: 100%;
+      margin-top: 30px; }
+      .opiniones .carousel .carousel-inner {
+        width: 100%;
+        display: flex; }
+        .opiniones .carousel .carousel-inner .carousel-item {
+          width: 120%;
+          padding: 0 350px 0 350px;
+          align-content: center; }
     .opiniones .active {
       display: flex;
-      flex-direction: column; }
+      flex-direction: row; }
     .opiniones__formulario {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 60vh; }
-      .opiniones__formulario label,
-      .opiniones__formulario input,
-      .opiniones__formulario div,
-      .opiniones__formulario textarea {
-        width: 60vh; }
-      .opiniones__formulario .acciones {
-        padding: 0; }
+      width: 120vh; }
     .opiniones__titulo {
       text-align: center;
       color: #454500;
@@ -1134,29 +1124,28 @@ form {
       .opiniones__titulo--titulochico {
         font-family: 'Darker Grotesque', sans-serif; }
   .caja {
-    width: 30vh;
-    height: 165px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 20px 0 20px;
     background-color: rgba(252, 252, 252, 0.315);
     transition: all 1.5s;
-    margin: 10px 0px 10px 0px; }
+    margin: 0 5px 0 5px; }
     .caja:hover {
       transform: scale(1.1);
       cursor: pointer; }
     .caja .nombre {
       display: flex;
       position: absolute;
-      padding-top: 10px;
+      padding-top: 20px;
       margin-bottom: 10px;
-      font-size: 10px; }
+      font-size: 18px; }
     .caja .contenido {
       display: flex;
       justify-content: flex-end;
-      font-size: 12px;
-      margin-top: 15px;
+      font-size: 25px;
+      margin-top: 30px;
       padding-top: 20px; } }
 
 @media (max-width: 576px) {
