@@ -589,6 +589,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 100%;
 
         .newsletter {
             flex-grow: 8;
@@ -1748,7 +1749,7 @@ form {
     .footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
     }
