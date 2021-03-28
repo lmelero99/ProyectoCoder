@@ -1102,7 +1102,7 @@ form {
         display: flex; }
         .opiniones .carousel .carousel-inner .carousel-item {
           width: 120%;
-          padding: 0 10px 0 10px;
+          padding: 0 50px 0 50px;
           align-content: center;
           flex-direction: row; }
     .opiniones .active {
@@ -1125,7 +1125,7 @@ form {
       .opiniones__titulo--titulochico {
         font-family: 'Darker Grotesque', sans-serif; }
   .caja {
-    width: 200px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1141,11 +1141,11 @@ form {
       position: absolute;
       padding-top: 20px;
       margin-bottom: 10px;
-      font-size: 8px; }
+      font-size: 10px; }
     .caja .contenido {
       display: flex;
       justify-content: flex-end;
-      font-size: 15px;
+      font-size: 13px;
       margin-top: 30px;
       padding-top: 20px; } }
 
