@@ -1136,7 +1136,7 @@ form {
     align-items: center;
     background-color: rgba(252, 252, 252, 0.315);
     transition: all 1.5s;
-    margin: 0 5px 0 5px; }
+    margin: 0 15px 0 15px; }
     .caja:hover {
       transform: scale(1.1);
       cursor: pointer; }
