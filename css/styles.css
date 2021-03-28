@@ -1153,7 +1153,12 @@ form {
       justify-content: flex-end;
       font-size: 11px;
       margin-top: 30px;
-      padding-top: 20px; } }
+      padding-top: 20px; }
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
 @media (max-width: 576px) {
   * {
@@ -1497,14 +1502,6 @@ form {
   .compraExitosa {
     margin: 0;
     padding: 0; } }
-
-/* Footer */
-.footer {
-  display: flex;
-  align-self: flex-end;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
 
 /*-------------- Keyframes ---------------*/
 /* Compra Exitosa */

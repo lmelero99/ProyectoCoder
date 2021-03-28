@@ -1743,6 +1743,14 @@ form {
 
     }
 
+    /* Footer */
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 
 }
 
@@ -2278,15 +2286,6 @@ form {
 }
 
 
-
-/* Footer */
-.footer {
-    display: flex;
-    align-self: flex-end;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
 
 
 /*-------------- Keyframes ---------------*/
