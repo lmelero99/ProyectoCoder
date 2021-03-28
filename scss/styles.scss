@@ -1523,17 +1523,17 @@ form {
         .carousel {
             display: flex;
             justify-content: center;
-            width: 100vh;
+            width: 100%;
 
             .carousel-inner {
-                width: 100vh;
+                width: 100%;
 
                 .carousel-item {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    width: 100vh;
+                    width: 100%;
                 }
 
             }
@@ -1552,8 +1552,8 @@ form {
     .bloque {
         background-color: #E4FFC8;
         border: 1px solid green;
-        height: 435px;
-        width: 300px;
+        height: 400px;
+        width: 250px;
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -1562,13 +1562,13 @@ form {
         transition: all 2s;
 
         .bloqueFoto {
-            width: 297px;
-            height: 200px;
+            width: 247px;
+            height: 175px;
             transition: all 2s;
             display: flex;
 
             .card-img-top {
-                width: 297px;
+                width: 247px;
                 height: auto;
             }
 
@@ -1582,7 +1582,7 @@ form {
 
 
         .card-body {
-            width: 300px;
+            width: 250px;
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -1590,7 +1590,7 @@ form {
             position: static;
 
             .card-text {
-                font-size: 17px;
+                font-size: 15px;
             }
 
             .comprarProd {
