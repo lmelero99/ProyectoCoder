@@ -1014,9 +1014,9 @@ form {
     .market .carousel {
       display: flex;
       justify-content: center;
-      width: 100%; }
+      width: 80%; }
       .market .carousel .carousel-inner {
-        width: 100%; }
+        width: 80%; }
         .market .carousel .carousel-inner .carousel-item {
           display: flex;
           flex-direction: row;
