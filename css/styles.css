@@ -1125,7 +1125,7 @@ form {
       .opiniones__titulo--titulochico {
         font-family: 'Darker Grotesque', sans-serif; }
   .caja {
-    width: 400px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1141,11 +1141,11 @@ form {
       position: absolute;
       padding-top: 20px;
       margin-bottom: 10px;
-      font-size: 18px; }
+      font-size: 8px; }
     .caja .contenido {
       display: flex;
       justify-content: flex-end;
-      font-size: 25px;
+      font-size: 15px;
       margin-top: 30px;
       padding-top: 20px; } }
 
